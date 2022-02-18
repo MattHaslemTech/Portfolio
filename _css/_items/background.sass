@@ -1,0 +1,53 @@
+//[data-theme="dark"]
+.background-colors.dark
+  --background-color: #380b74
+
+  --bg-color-top-left: rgba(101,0,212,1)
+  --bg-color-top-right: rgba(32,0,127,1)
+  --bg-color-bottom-right: rgba(0,0,0,1)
+  --bg-color-bottom-left: rgba(29,0,45,1)
+
+//[data-theme="light"]
+.background-colors.light
+  --background-color: rgba(23,224,133,1)
+
+  --bg-color-top-left: rgba(74,204,151,1)
+  --bg-color-top-right: rgba(23,224,133,1)
+  --bg-color-bottom-right: rgba(255,255,255,1)
+  --bg-color-bottom-left: rgba(55,130,191,1)
+
+
+[data-theme="dark"] .background-colors.light
+  opacity: 0
+
+
+
+body
+  @include transition(400ms)
+  //background: var(--background-color)
+
+
+.background-wrap
+  width: 100%
+  height: 100%
+
+  position: absolute
+  left: 0
+  top: 0
+
+
+  //background: radial-gradient(circle at 0% 0%, rgba(101,0,212,1) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, rgba(32,0,127,1) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, rgba(29,0,45,1) 20%, rgba(0,0,0,0))
+  background: radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0,0,0,0))
+
+
+  .background-colors
+    @include transition(400ms)
+
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 100%
+
+    background: radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0,0,0,0))

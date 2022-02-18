@@ -1,0 +1,55 @@
+[data-theme="light"]
+  //--theme-switch-bg: linear-gradient(90deg, rgba(23,224,133,1) 0% 35%, rgba(0,0,0,0) 35% 65%, rgba(101,0,212,0.2) 65% 100%)
+  //--theme-switch-bg: linear-gradient(90deg, rgba(23,224,133,1) 0% 50%, rgba(101,0,212,0.2) 50% 100%)
+  --theme-switch-bg: rgba(23,224,133,1)
+
+[data-theme="dark"]
+  //--theme-switch-bg: linear-gradient(90deg, rgba(23,224,133,0.2) 0% 50%, rgba(101,0,212,1) 50% 100%)
+  //--theme-switch-bg: linear-gradient(90deg, rgba(23,224,133,0.2) 0% 50%, rgba(101,0,212,1) 50% 100%)
+  --theme-switch-bg: rgba(101,0,212,1)
+
+
+
+.theme-switch-wrap
+  --wrapper-height: 20px
+  --wrapper-width: 40px
+
+  position: fixed
+  top: 15px
+  right: 15px
+
+  width: var(--wrapper-width)
+  height: var(--wrapper-height)
+
+  background: #ddd
+
+  border-radius: 80px
+  border: solid 2px #c3c3c3
+  box-sizing: content-box
+
+  overflow: hidden
+
+  cursor: pointer
+
+
+  .inner-content
+    @include transition(400ms)
+    position: relative
+    width: 100%
+    height: 100%
+    //background: var(--theme-switch-bg)
+
+    .toggle-switch
+      @include transition(400ms)
+
+      position: absolute
+      left: 0px
+
+      height: var(--wrapper-height)
+      width: var(--wrapper-height)
+      background: var(--theme-switch-bg)
+      border-radius: 80px
+      border: solid 3px #ddd
+
+      &.dark
+        left: calc( var(--wrapper-width) - var(--wrapper-height))

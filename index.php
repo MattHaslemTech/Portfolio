@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="content-wrap">
+        <div class="content-wrap ignore-width">
           <h1>Matt Haslem</h1>
           <div class="caption-wrap">
             <div class="hr"></div>
@@ -136,6 +136,120 @@
           <div class="vertical-divider"></div><a href="#skills">Skills</a>
           <div class="vertical-divider"></div><a href="#mywork">My Work</a>
           <div class="vertical-divider"></div><a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div id="about-me" data-section="about" class="section">
+        <div class="content-wrap">
+          <div class="img-wrap"><img src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer"/>
+            <div class="circles-wrap">
+              <div class="inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+  <defs>
+    <style>
+      .center1-cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="center1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="center1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
+  <defs>
+    <style>
+      .center2-cls1 {
+        fill: none;
+        
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        isolation: isolate;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Layer_2-2" data-name="Layer 2">
+        <g id="Layer_1-2-2" data-name="Layer 1-2"><path class="center2-cls1" d="M156.41,32.79A110.63,110.63,0,0,0,45,6.28"/><path class="center2-cls1" d="M.7,189.26a110.59,110.59,0,0,0,111.36,26.5"/></g>
+      </g>
+    </g>
+  </g>
+</svg>
+
+              </div>
+              <div class="second"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+  <defs>
+    <style>
+      .second1-cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="second1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="second1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+  <defs>
+    <style>
+      .second2-cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="second2-cls-1" d="M99.27,2A110.64,110.64,0,0,0,1.78,62"/><path class="second2-cls-1" d="M99.81,222.74a110.58,110.58,0,0,0,97.49-60"/></g>
+  </g>
+</svg>
+
+              </div>
+              <div class="outer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+  <defs>
+    <style>
+      .outer1-cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="outer1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="outer1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+  <defs>
+    <style>
+      .outer2-cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+        opacity: 0.53;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="outer2-cls-1" d="M99.27,2A110.64,110.64,0,0,0,1.78,62"/><path class="outer2-cls-1" d="M99.81,222.74a110.58,110.58,0,0,0,97.49-60"/></g>
+  </g>
+</svg>
+
+              </div>
+            </div>
+          </div>
+          <div class="text-wrap">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam soluta incidunt error rerum a ad optio accusantium quidem, excepturi voluptas voluptatibus repellendus eos officia quaerat perferendis ea eius aliquid!</p>
+          </div>
         </div>
       </div><div class="theme-switch-wrap">
   <div class="inner-content">

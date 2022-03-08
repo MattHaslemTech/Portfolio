@@ -52,7 +52,7 @@ body[data-theme=dark] {
 }
 
 [data-theme=light] {
-  --heading-color: #1e1e1e;
+  --heading-color: rgba(84,84,84,1);
   --text-color: rgba(84,84,84,1);
   --link-color: #46A5B4;
   --link-color-dark: #3E929B;
@@ -417,6 +417,10 @@ body {
   width: 100%;
   max-width: 100%;
 }
+.section > .content-wrap:not(.ignore-width) {
+  max-width: 900px;
+  margin: 0px auto;
+}
 
 .section#nav-links-desktop .links-wrap {
   display: flex;
@@ -488,6 +492,96 @@ body {
   #mobile-nav {
     right: -250px;
   }
+}
+#about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  min-height: 500px;
+  background-image: url("_pics/experience-border-top.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#about-me .content-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#about-me .content-wrap .img-wrap {
+  width: 140px;
+  height: 140px;
+  margin-right: 40px;
+  position: relative;
+}
+#about-me .content-wrap .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100px;
+}
+#about-me .content-wrap .img-wrap .circles-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Set variables used by spinning circles */
+  --svg-bottom: -30px;
+  --first-dimension: 200px;
+  --animation-speed: 9000ms;
+}
+#about-me .content-wrap .img-wrap .circles-wrap > * {
+  position: relative;
+}
+#about-me .content-wrap .img-wrap .circles-wrap svg {
+  position: absolute;
+  bottom: var(--svg-bottom);
+  animation: spin-circle var(--animation-speed) linear infinite;
+  left: calc(0px - (var(--dimension) / 2));
+  width: var(--dimension);
+  height: var(--dimension);
+  transition: all 400ms ease-in-out;
+}
+#about-me .content-wrap .img-wrap .circles-wrap svg:nth-child(2) {
+  animation-direction: reverse;
+  animation-duration: calc(var(--animation-speed) - 2000ms);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .inner {
+  --dimension: var(--first-dimension);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .inner svg:nth-child(1) {
+  animation-duration: calc(var(--animation-speed) - 1000ms);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .second {
+  --dimension: calc(var(--first-dimension) + 30px);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .second svg {
+  bottom: calc(var(--svg-bottom) - 15px);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .second svg:nth-child(1) {
+  animation-direction: reverse;
+}
+#about-me .content-wrap .img-wrap .circles-wrap .second svg:nth-child(2) {
+  animation-direction: normal;
+}
+#about-me .content-wrap .img-wrap .circles-wrap .outer {
+  --dimension: calc(var(--first-dimension) + 60px);
+}
+#about-me .content-wrap .img-wrap .circles-wrap .outer svg {
+  bottom: calc(var(--svg-bottom) - 30px);
+}
+#about-me .content-wrap .text-wrap {
+  width: min(90%, 560px);
 }
 
 /*# sourceMappingURL=main.css.map */

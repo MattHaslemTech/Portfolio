@@ -26,7 +26,7 @@ html(lang="en" dir="ltr")
               include _pics/circles/outer1.svg 
               include _pics/circles/outer2.svg   
            
-        .content-wrap
+        .content-wrap.ignore-width
           h1 Matt Haslem
           .caption-wrap
             .hr
@@ -44,6 +44,26 @@ html(lang="en" dir="ltr")
           a(href="#mywork") My Work
           .vertical-divider
           a(href="#contact") Contact
+          
+          
+      .section#about-me(data-section="about")
+        .content-wrap
+          .img-wrap
+            img(src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer")
+            .circles-wrap
+              .inner
+                include _pics/circles/center1.svg
+                include _pics/circles/center2.svg
+              .second
+                include _pics/circles/second1.svg
+                include _pics/circles/second2.svg  
+              .outer
+                include _pics/circles/outer1.svg 
+                include _pics/circles/outer2.svg  
+          .text-wrap
+            h1 About Me
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam soluta incidunt error rerum a ad optio accusantium quidem, excepturi voluptas voluptatibus repellendus eos officia quaerat perferendis ea eius aliquid!
 
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator 

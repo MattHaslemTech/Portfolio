@@ -1,0 +1,84 @@
+#about-me
+  @include flex(row, center, center, nowrap)
+  min-height: 500px
+
+  background-image: url('_pics/experience-border-top.svg')
+  background-position: bottom
+  background-size: contain
+  background-repeat: no-repeat
+
+  .content-wrap
+    @include flex(row, center, space-around, nowrap)
+
+    .img-wrap
+      width: 140px
+      height: 140px
+      margin-right: 40px
+
+      position: relative
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 100px
+
+      .circles-wrap
+        @include flex(row, flex-end, center, nowrap)
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        //overflow: hidden
+
+        & > *
+          position: relative
+
+        /* Set variables used by spinning circles */
+        --svg-bottom: -30px
+        --first-dimension: 200px
+        --animation-speed: 9000ms
+
+        svg
+          position: absolute
+          bottom: var(--svg-bottom)
+          animation: spin-circle var(--animation-speed) linear infinite
+
+          left: calc(0px - (var(--dimension) / 2))
+          width: var(--dimension)
+          height: var(--dimension)
+
+          @include transition(400ms)
+
+
+        svg:nth-child(2)
+          animation-direction: reverse
+          animation-duration: calc(var(--animation-speed) - 2000ms)
+
+        .inner
+          --dimension: var(--first-dimension)
+
+          svg
+            &:nth-child(1)
+              animation-duration: calc(var(--animation-speed) - 1000ms)
+
+
+        .second
+          --dimension: calc(var(--first-dimension) + 30px)
+          svg
+            bottom: calc(var(--svg-bottom) - 15px)
+
+            &:nth-child(1)
+              animation-direction: reverse
+            &:nth-child(2)
+              animation-direction: normal
+
+        .outer
+          --dimension: calc(var(--first-dimension) + 60px)
+          svg
+            bottom: calc(var(--svg-bottom) - 30px)
+
+
+    .text-wrap
+      width: min(90%, 560px)

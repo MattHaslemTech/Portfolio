@@ -238,7 +238,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  position: absolute;
+  position: fixed;
   left: 15px;
   bottom: 15px;
 }
@@ -449,7 +449,7 @@ body {
   justify-content: flex-start;
   flex-wrap: nowrap;
   transition: all 400ms ease-in-out;
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: -310px;
 }

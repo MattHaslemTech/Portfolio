@@ -3,9 +3,8 @@
     <style>
       .center1-cls-1 {
         fill: none;
-        stroke: #1ab1a4;
         stroke-miterlimit: 10;
-        stroke-width: 4px;
+        stroke-width: 2px;
         opacity: 0.53;
       }
     </style>

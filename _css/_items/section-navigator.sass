@@ -1,0 +1,25 @@
+#section-navigator
+  @include flex(row, center, flex-start, nowrap)
+  position: absolute
+  left: 15px
+  bottom: 15px
+  
+  .arrow
+    width: 44px
+    height: 44px
+    border-radius: 100px
+    background-position: center
+    background-size: 13px 18px
+    background-repeat: no-repeat
+
+    &.down
+      background-image: url('_pics/arrow-down.svg')
+      margin-right: 8px
+    &.up
+      background-image: url('_pics/arrow-up.svg')
+      margin-right: 20px
+
+
+  .text
+    font-size: 20px
+    color: var(--link-color)

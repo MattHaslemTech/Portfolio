@@ -7,17 +7,34 @@
 
   position: relative
 
+  --content-wrap-height: 78%
+
   .content-wrap
-    @include flex(column, center, center, nowrap)
+    @include flex(column, center, flex-end, nowrap)
     position: absolute
     left: 0
     top: 0
 
-    height: 100%
+    height: var(--content-wrap-height)
     width: 100%
 
     h1
       color: #fff
+      margin-bottom: 36px
+
+    .caption-wrap
+      @include flex(row, center, center, nowrap)
+      width: min(95%, 460px)
+      color: white
+
+      .hr
+        width: 100%
+        height: 2px
+        background: white
+      .text
+        margin: 0px 30px
+        white-space: nowrap
+        font-size: 20px
 
   .background-wrap
     .circles-wrap
@@ -26,25 +43,60 @@
       top: 0
       left: 0
       width: 100%
-      height: 68%
+      height: calc(var(--content-wrap-height) - 3%)
       overflow: hidden
 
       & > *
         position: relative
 
+      /* Set variables used by spinning circles */
+      --svg-bottom: -150px
+      --first-dimension: 350px
+      --animation-speed: 9000ms
+
       svg
         position: absolute
-        bottom: -150px
-        animation: spin-circle 10000ms linear infinite
+        bottom: var(--svg-bottom)
+        animation: spin-circle var(--animation-speed) linear infinite
+
+        left: calc(0px - (var(--dimension) / 2))
+        width: var(--dimension)
+        height: var(--dimension)
+
+        @include transition(400ms)
+
+
       svg:nth-child(2)
         animation-direction: reverse
+        animation-duration: calc(var(--animation-speed) - 2000ms)
 
       .inner
-        --dimension: 350px
+        --dimension: var(--first-dimension)
+
         svg
-          left: calc(0px - (var(--dimension) / 2))
-          width: var(--dimension)
-          height: var(--dimension)
+          &:nth-child(1)
+            animation-duration: calc(var(--animation-speed) - 1000ms)
+
+      .second
+        --dimension: calc(var(--first-dimension) + 50px)
+        svg
+          bottom: calc(var(--svg-bottom) - 20px)
+
+          &:nth-child(1)
+            animation-direction: reverse
+          &:nth-child(2)
+            animation-direction: normal
+
+      .outer
+        --dimension: calc(var(--first-dimension) + 100px)
+        svg
+          bottom: calc(var(--svg-bottom) - 40px)
+
+/* Set colors of circles depending on theme switch */
+[data-theme="light"] svg
+  stroke: #1ab1a4
+[data-theme="dark"] svg
+  stroke: #8B37B7
 
 
 @keyframes spin-circle
@@ -52,3 +104,12 @@
     transform: rotateZ(0deg)
   to
     transform: rotateZ(360deg)
+
+
+
+/* MOBILE SECTION */
+.section#hero
+  .content-wrap
+    .caption-wrap
+      .text
+        margin: 0 18px

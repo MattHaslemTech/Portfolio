@@ -8,9 +8,9 @@ html(lang="en" dir="ltr")
     title Matt Haslem - Web Developer
   body(data-theme="light")
     #all-content-wrap
-      .section#hero
-        
-          
+       
+      
+      .section#hero     
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -19,10 +19,36 @@ html(lang="en" dir="ltr")
             .inner
               include _pics/circles/center1.svg
               include _pics/circles/center2.svg
-          
+            .second
+              include _pics/circles/second1.svg
+              include _pics/circles/second2.svg  
+            .outer
+              include _pics/circles/outer1.svg 
+              include _pics/circles/outer2.svg   
+           
         .content-wrap
           h1 Matt Haslem
-      include _includes/_items/theme-switch.php  
+          .caption-wrap
+            .hr
+            .text Web Developer
+            .hr
+      
+      .section#nav-links-desktop.tablet-hide 
+        .links-wrap 
+          a(href="#about") About Me
+          .vertical-divider
+          a(href="#experience") Experience & Education
+          .vertical-divider
+          a(href="#skills") Skills
+          .vertical-divider
+          a(href="#mywork") My Work
+          .vertical-divider
+          a(href="#contact") Contact
+
+      include _includes/_items/theme-switch.php 
+      include _includes/_items/section-navigator 
+      include _includes/_items/mobile-nav 
+      
     
  
  

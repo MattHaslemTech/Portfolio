@@ -1,13 +1,17 @@
 [data-theme="light"]
   --heading-color: #1e1e1e
   --text-color: rgba(84,84,84,1)
+  --link-color: #46A5B4
+  --link-color-dark: #3E929B
 [data-theme="dark"]
   --heading-color: #f8f8f8
   --text-color: #fff
+  --link-color: #9D57F7
+  --link-color-dark: #8943F7
 
 body
   font-family: Calibri
-  color: var(--text-color) 
+  color: var(--text-color)
 
 h1, h2, h3, h4, h5, h6
   @include transition(400ms)
@@ -22,3 +26,8 @@ h3
   font-size: 24px
 h4
   font-size: 18px
+
+a
+  color: var(--link-color)
+  &:hover
+    text-decoration: underline

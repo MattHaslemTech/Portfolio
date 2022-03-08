@@ -1,0 +1,21 @@
+.section#nav-links-desktop
+  .links-wrap
+    @include flex(row, center, center, nowrap)
+    width: 100%
+    padding: 40px
+
+    a
+      font-size: 19px
+      white-space: nowrap
+
+    .vertical-divider
+      width: 1px
+      height: 37px
+      background: #E2E2E2
+      margin: 0 40px
+
+[data-theme="dark"]
+  .section#nav-links-desktop
+    .links-wrap
+      .vertical-divider
+        background: #555

@@ -1,0 +1,108 @@
+[data-theme="dark"]
+  .section#experience
+    background: #A0A0A0
+  .content-wrap
+    .section
+      .card
+        .title-wrap
+          .text-wrap
+            h4, .caption
+              color: rgba(84,84,84,1)!important
+        .desc
+          color: rgba(84,84,84,1)
+
+.section#experience
+  padding: 60px 0px
+  background: #F4F4F4
+
+  transform: translateY(-6px)
+
+  .content-wrap
+    h2
+      margin-bottom: 30px
+      font-size: 36px
+
+    .section
+      margin-bottom: 40px
+      position: relative
+
+      .card
+        background-color: white
+        padding: 40px
+        padding-bottom: 80px
+        border-left: solid 24px
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+
+        &[data-company="MAXX"]
+          --theme-color: #BB2025
+          border-left-color: var(--theme-color)
+
+        &[data-company="ODU"]
+          --theme-color: #043657
+          border-left-color: var(--theme-color)
+
+        & > *
+          width: 100%
+
+        .title-wrap
+          @include flex(row, stretch, flex-start, nowrap)
+          padding-bottom: 20px
+          margin-bottom: 20px
+          border-bottom: solid 2px #F4F4F4
+
+          .image-wrap
+            @include flex(row, center, center, nowrap)
+            margin-right: 20px
+            img
+              height: 50px
+              width: auto
+
+          .text-wrap
+            @include flex(column, flex-start, space-between, nowrap)
+
+            h4
+              font-size: 22px
+
+        .button-wrap
+          position: absolute
+          right: 0px
+          bottom: 0px
+
+          .button
+            @include flex(row, center, center, nowrap)
+            float: right
+            background-color: var(--theme-color)
+            width: 135px
+            padding: 15px 0px
+            color: white
+            font-weight: bold
+
+            border-radius: 8px 0px 0px 0px
+
+            &:hover
+              text-decoration: underline
+
+            img
+              width: 12px
+              height: auto
+              margin-left: 10px
+
+
+        &.small
+          padding-bottom: 40px
+
+          .title-wrap
+            margin-bottom: 0px
+            padding-bottom: 0px
+            border-bottom: none
+
+            .image-wrap
+              img
+                height: 43px
+
+            .text-wrap
+              h4
+                margin-bottom: 6px
+
+      .cards-wrap
+        @include flex(row, center, space-between, nowrap)

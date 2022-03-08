@@ -253,7 +253,47 @@
         </div>
       </div>
       <div id="experience" data-section="experience" class="section">
-        <div class="content-wrap"></div>
+        <div class="content-wrap">
+          <div class="section experience">
+            <h2>Experience</h2>
+            <div data-company="MAXX" class="card">
+              <div class="title-wrap">
+                <div class="image-wrap"><img src="_pics/experience/MaxxPotential.svg"/></div>
+                <div class="text-wrap"> 
+                  <h4>MAXX Potential</h4>
+                  <div class="caption">Technology Apprentice ( <em>July 2021 - Present</em> )</div>
+                </div>
+              </div>
+              <div class="desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum mollitia voluptates rem officia? Animi eligendi, nulla, aperiam iste eius molestias libero odio iure aliquid ipsum ab cupiditate cum quasi?</div>
+              <div class="button-wrap">
+                <div class="button">Projects <img src="_pics/icons/double-arrow.svg"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="section education">
+            <h2>Education</h2>
+            <div class="cards-wrap">
+              <div data-company="ODU" class="card small">
+                <div class="title-wrap">
+                  <div class="image-wrap"><img src="_pics/experience/OldDominionUniversity.svg"/></div>
+                  <div class="text-wrap">
+                    <h4>Old Dominion University</h4>
+                    <div class="caption">Computer Science - Bachelor of Science<br/><em>( January 2019 - May 2022 )</em></div>
+                  </div>
+                </div>
+              </div>
+              <div data-company="ODU" class="card small">
+                <div class="title-wrap">
+                  <div class="image-wrap"><img src="_pics/experience/OldDominionUniversity.svg"/></div>
+                  <div class="text-wrap">
+                    <h4>Old Dominion University</h4>
+                    <div class="caption">Communications - Bachelor of Science<br/><em>( August 2011 - December 2016 )</em></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div><div class="theme-switch-wrap">
   <div class="inner-content">
     <div class="color-wrap">

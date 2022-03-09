@@ -33,10 +33,11 @@ body, html {
   overflow-x: hidden;
 }
 
-body {
-  padding: min(3vw, 50px);
+@media only screen and (min-width: 900px) {
+  body {
+    padding: min(3vw, 50px);
+  }
 }
-
 body[data-theme=dark] {
   background: #333;
 }
@@ -107,6 +108,12 @@ a:hover {
   background: var(--body-background-color);
 }
 
+@media only screen and (max-width: 900px) {
+  #all-content-wrap > .section {
+    padding-left: min(3vw, 50px) !important;
+    padding-right: min(3vw, 50px) !important;
+  }
+}
 @media only screen and (min-width: 900px) {
   .desktop-hide {
     display: none !important;
@@ -291,7 +298,6 @@ body {
   width: min(90%, 950px);
 }
 
-@use "sass:math";
 .section#hero {
   overflow: hidden;
   height: 456px;
@@ -704,6 +710,7 @@ body {
 }
 .section#experience .content-wrap .section .card.small {
   padding-bottom: 40px;
+  margin-bottom: 25px;
 }
 .section#experience .content-wrap .section .card.small .title-wrap {
   margin-bottom: 0px;
@@ -721,7 +728,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=main.css.map */

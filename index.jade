@@ -7,10 +7,34 @@ html(lang="en" dir="ltr")
     include _scripts/scripts.php
     title Matt Haslem - Web Developer
   body(data-theme="light")
+    .section#hero.larger-than-tablet-hide
+      .background-wrap
+        .background-colors.dark 
+        .background-colors.light
+        //canvas#bg-canvas
+        .circles-wrap
+          .inner
+            include _pics/circles/center1.svg
+            include _pics/circles/center2.svg
+          .second
+            include _pics/circles/second1.svg
+            include _pics/circles/second2.svg  
+          .outer
+            include _pics/circles/outer1.svg  
+            include _pics/circles/outer2.svg   
+         
+      .content-wrap.ignore-width
+        h1 Matt Haslem
+        .caption-wrap
+          .hr
+          .text Web Developer
+          .hr
+          
+          
     #all-content-wrap
        
       
-      .section#hero     
+      .section#hero.tablet-hide 
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -23,7 +47,7 @@ html(lang="en" dir="ltr")
               include _pics/circles/second1.svg
               include _pics/circles/second2.svg  
             .outer
-              include _pics/circles/outer1.svg 
+              include _pics/circles/outer1.svg  
               include _pics/circles/outer2.svg   
            
         .content-wrap.ignore-width

@@ -1,6 +1,6 @@
 
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en" dir="ltr">    
+  <head>  
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="stylesheet" type="text/css" href="main.css" />
 
@@ -9,14 +9,14 @@
 
     <title>Matt Haslem - Web Developer</title>
   </head>
-  <body data-theme="light">
+  <body data-theme="light"> 
     <div id="hero" class="section larger-than-tablet-hide">
       <div class="background-wrap">
         <div class="background-colors dark"> </div>
         <div class="background-colors light"></div>
         <!--canvas#bg-canvas-->
         <div class="circles-wrap">
-          <div class="inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+          <div class="inner"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .center1-cls-1 {
@@ -31,12 +31,12 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="center1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="center1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
   <defs>
     <style>
       .center2-cls1 {
         fill: none;
-        
+
         stroke-miterlimit: 10;
         stroke-width: 2px;
         isolation: isolate;
@@ -54,7 +54,7 @@
 </svg>
 
           </div>
-          <div class="second"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+          <div class="second"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .second1-cls-1 {
@@ -69,7 +69,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="second1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="second1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg  class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .second2-cls-1 {
@@ -86,7 +86,7 @@
 </svg>
 
           </div>
-          <div class="outer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+          <div class="outer"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .outer1-cls-1 {
@@ -101,7 +101,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="outer1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="outer1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .outer2-cls-1 {
@@ -136,7 +136,7 @@
           <div class="background-colors light"></div>
           <!--canvas#bg-canvas-->
           <div class="circles-wrap">
-            <div class="inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+            <div class="inner"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .center1-cls-1 {
@@ -151,12 +151,12 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="center1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="center1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
   <defs>
     <style>
       .center2-cls1 {
         fill: none;
-        
+
         stroke-miterlimit: 10;
         stroke-width: 2px;
         isolation: isolate;
@@ -174,7 +174,7 @@
 </svg>
 
             </div>
-            <div class="second"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+            <div class="second"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .second1-cls-1 {
@@ -189,7 +189,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="second1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="second1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg  class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .second2-cls-1 {
@@ -206,7 +206,7 @@
 </svg>
 
             </div>
-            <div class="outer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+            <div class="outer"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .outer1-cls-1 {
@@ -221,7 +221,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="outer1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="outer1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .outer2-cls-1 {
@@ -261,7 +261,7 @@
         <div class="content-wrap">
           <div class="img-wrap"><img src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer"/>
             <div class="circles-wrap">
-              <div class="inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+              <div class="inner"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .center1-cls-1 {
@@ -276,12 +276,12 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="center1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="center1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
   <defs>
     <style>
       .center2-cls1 {
         fill: none;
-        
+
         stroke-miterlimit: 10;
         stroke-width: 2px;
         isolation: isolate;
@@ -299,7 +299,7 @@
 </svg>
 
               </div>
-              <div class="second"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+              <div class="second"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .second1-cls-1 {
@@ -314,7 +314,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="second1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="second1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg  class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .second2-cls-1 {
@@ -331,7 +331,7 @@
 </svg>
 
               </div>
-              <div class="outer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
+              <div class="outer"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
     <style>
       .outer1-cls-1 {
@@ -346,7 +346,7 @@
     <g id="Layer_1-2" data-name="Layer 1"><path class="outer1-cls-1" d="M218.68,145.61A110.54,110.54,0,0,0,89.82,4.5"/><path class="outer1-cls-1" d="M7.07,79.93A110.53,110.53,0,0,0,112.44,223.55a111.51,111.51,0,0,0,23.49-2.5"/></g>
   </g>
 </svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 199.08 224.74">
   <defs>
     <style>
       .outer2-cls-1 {
@@ -380,7 +380,7 @@
                 <div class="image-wrap"><img src="_pics/experience/MaxxPotential.svg"/></div>
                 <div class="text-wrap"> 
                   <h4>MAXX Potential</h4>
-                  <div class="caption">Technology Apprentice ( <em>July 2021 - Present</em> )</div>
+                  <div class="caption">Technology Apprentice <br class="desktop-hide"/><em>( July 2021 - Present )</em></div>
                 </div>
               </div>
               <div class="desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum mollitia voluptates rem officia? Animi eligendi, nulla, aperiam iste eius molestias libero odio iure aliquid ipsum ab cupiditate cum quasi?</div>
@@ -411,6 +411,33 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="section">
+        <div class="background-wrap">
+          <div class="background-colors dark"> </div>
+          <div class="background-colors light"></div>
+        </div>
+        <div class="bg-border-wrap">
+          <div class="border top"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-top-dark-cls-1{fill:#a0a0a0;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-dark-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g></g></svg>
+<svg class="light-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
+  <defs>
+    <style>
+      .skills-border-top-light-cls-1 {
+        fill: #f4f4f4;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-light-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g>
+  </g>
+</svg>
+
+          </div>
+          <div class="border bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-bottom-dark-cls-1{fill:#a0a0a0;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-dark-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g></g></svg>
+<svg class="light-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-bottom-light-cls-1{fill:#f4f4f4;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-light-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g></g></svg>
+
           </div>
         </div>
       </div><div class="theme-switch-wrap">

@@ -12,6 +12,7 @@
           color: rgba(84,84,84,1)
 
 .section#experience
+  transition: background-color 400ms ease-in-out
   padding: 60px 0px
   background: #F4F4F4
 
@@ -107,3 +108,23 @@
 
       .cards-wrap
         @include flex(row, center, space-between, wrap)
+
+
+@media only screen and (max-width: 900px)
+  .section#experience
+    .content-wrap
+      .section
+        .card
+
+          .title-wrap
+            @include flex(column, center, flex-start, wrap)
+            h4
+              margin-bottom: 12px
+            .image-wrap
+              margin-bottom: 15px
+              margin-right: 0px
+            .text-wrap
+              text-align: center
+
+          &.small
+            width: 100%

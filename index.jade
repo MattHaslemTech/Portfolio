@@ -1,12 +1,12 @@
 //output: index.php
-
-html(lang="en" dir="ltr")
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    include _scripts/scripts.php
+ 
+html(lang="en" dir="ltr")     
+  head   
+    meta(charset="utf-8")            
+    meta(name="viewport" content="width=device-width, initial-scale=1.0") 
+    include _scripts/scripts.php 
     title Matt Haslem - Web Developer
-  body(data-theme="light")
+  body(data-theme="light") 
     .section#hero.larger-than-tablet-hide
       .background-wrap
         .background-colors.dark 
@@ -18,7 +18,7 @@ html(lang="en" dir="ltr")
             include _pics/circles/center2.svg
           .second
             include _pics/circles/second1.svg
-            include _pics/circles/second2.svg  
+            include _pics/circles/second2.svg   
           .outer
             include _pics/circles/outer1.svg  
             include _pics/circles/outer2.svg   
@@ -101,9 +101,9 @@ html(lang="en" dir="ltr")
                   h4
                     | MAXX Potential
                   .caption
-                    | Technology Apprentice ( 
-                    em July 2021 - Present
-                    |  )
+                    | Technology Apprentice 
+                    br.desktop-hide
+                    em ( July 2021 - Present )
               .desc
                 |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum mollitia voluptates rem officia? Animi eligendi, nulla, aperiam iste eius molestias libero odio iure aliquid ipsum ab cupiditate cum quasi?
               .button-wrap
@@ -134,7 +134,18 @@ html(lang="en" dir="ltr")
                       br
                       em ( August 2011 - December 2016 )
                     
-              
+      .section#skills
+        .background-wrap
+          .background-colors.dark 
+          .background-colors.light
+        .bg-border-wrap
+          .border.top 
+            include _pics/skills/skills-border-top-dark.svg
+            include _pics/skills/skills-border-top-light.svg
+          .border.bottom
+            include _pics/skills/skills-border-bottom-dark.svg
+            include _pics/skills/skills-border-bottom-light.svg 
+           
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator 
       include _includes/_items/mobile-nav 

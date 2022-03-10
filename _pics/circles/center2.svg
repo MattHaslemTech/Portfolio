@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
+<svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 157.11 222.05">
   <defs>
     <style>
       .center2-cls1 {
         fill: none;
-        
+
         stroke-miterlimit: 10;
         stroke-width: 2px;
         isolation: isolate;

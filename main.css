@@ -298,6 +298,7 @@ body {
   width: min(90%, 950px);
 }
 
+@use "sass:math";
 .section#hero {
   overflow: hidden;
   height: 456px;
@@ -398,11 +399,11 @@ body {
 }
 
 /* Set colors of circles depending on theme switch */
-[data-theme=light] svg {
+[data-theme=light] svg.circle {
   stroke: #1ab1a4;
 }
 
-[data-theme=dark] svg {
+[data-theme=dark] svg.circle {
   stroke: #8B37B7;
 }
 
@@ -619,6 +620,7 @@ body {
 }
 
 .section#experience {
+  transition: background-color 400ms ease-in-out;
   padding: 60px 0px;
   background: #F4F4F4;
   transform: translateY(-6px);
@@ -729,6 +731,68 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 900px) {
+  .section#experience .content-wrap .section .card .title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .section#experience .content-wrap .section .card .title-wrap h4 {
+    margin-bottom: 12px;
+  }
+  .section#experience .content-wrap .section .card .title-wrap .image-wrap {
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+  .section#experience .content-wrap .section .card .title-wrap .text-wrap {
+    text-align: center;
+  }
+  .section#experience .content-wrap .section .card.small {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section#skills {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+.section#skills {
+  min-height: 400px;
+  height: 400px;
+  background: green;
+  transform: translateY(-10px);
+  background: radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0, 0, 0, 0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0, 0, 0, 0));
+}
+.section#skills .bg-border-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+.section#skills .bg-border-wrap .border {
+  position: relative;
+}
+.section#skills .bg-border-wrap .border svg {
+  transition: all 400ms ease-in-out;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.section#skills .bg-border-wrap .border.bottom svg {
+  top: auto;
+  bottom: 0px;
+}
+
+[data-theme=dark] .section#skills .bg-border-wrap .border svg.light-border {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,19 +4,28 @@
     padding-right: 0px!important
 
 .section#skills
-  min-height: 400px
-  height: 400px
   background: green
 
   transform: translateY(-10px)
 
-  background:  radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0,0,0,0))
+  //background:  radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0,0,0,0))
 
+  .background-wrap
+    z-index: -1
+    .background-colors.light
+      background: radial-gradient(circle at 75% 50%, rgba(76,245,168,1) 20%, rgba(0,0,0,0)), radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 100%, rgba(0,0,0,0))
+    .background-colors.dark
+      background: radial-gradient(circle at 75% 50%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 0% 0%, var(--bg-color-top-right) 100%, rgba(0,0,0,0))
 
   .bg-border-wrap
     @include flex(column, stretch, space-between, nowrap)
     width: 100%
     height: 100%
+
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: -1
 
     .border
       position: relative
@@ -31,6 +40,62 @@
         svg
           top: auto
           bottom: 0px
+
+
+  .content-wrap
+    @include flex(row, center, space-between, nowrap)
+    padding: 100px 60px
+    color: white
+
+    h2
+      color: white
+      margin-bottom: 20px
+
+    ul
+      margin-bottom: 20px
+
+      &:first-child
+        margin-bottom: 40px
+
+      li
+        margin-bottom: 10px
+
+        label
+          @include flex(row, center, flex-start, nowrap)
+          position: relative
+
+          .checkbox
+            height: 15px
+            width: 15px
+            background: white
+            display: inline-block
+            margin-right: 15px
+            border-radius: 2px
+
+            &:after
+              content: ""
+              position: absolute
+              left: 2px
+              top: 4px
+              width: 11px
+              height: 11px
+              background: #A5A5A5
+              opacity: 0
+
+          input:checked ~ .checkbox
+            &:after
+              opacity: 1
+
+          input
+            display: none
+
+  .right-side
+    max-width: 50%
+    .word-cloud-wrap
+      .item
+        display: inline-block
+        font-size: 36px
+        margin: 5px
 
 
 [data-theme="dark"]

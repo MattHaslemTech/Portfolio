@@ -145,11 +145,55 @@ html(lang="en" dir="ltr")
           .border.bottom
             include _pics/skills/skills-border-bottom-dark.svg
             include _pics/skills/skills-border-bottom-light.svg 
+        .content-wrap
+          .left-side
+            h2 Skills
+            
+            .fiters-wrap
+              ul
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Professional Experience
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Personal Project / School Experience
+              ul
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Front-End Development
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Back-End Development
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Programming
+                li
+                  label
+                    input(type="checkbox")
+                    .checkbox
+                    | Design
+            .button
+              | Clear            
            
+          .right-side
+            .word-cloud-wrap 
+              - for (var i = 0; i < 25; ++i) {
+                <div class="item">Nice</div>
+              - }
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator 
       include _includes/_items/mobile-nav 
       
     
  
- 
+  

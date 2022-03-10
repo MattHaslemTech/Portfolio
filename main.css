@@ -82,7 +82,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 h3 {
@@ -273,6 +273,9 @@ body {
 .button {
   transition: all 200ms ease-in-out;
   background-color: var(--link-color);
+  width: fit-content;
+  padding: 6px 15px;
+  border-radius: 6px;
 }
 .button:hover, .button.active {
   cursor: pointer;
@@ -513,7 +516,7 @@ body {
   min-height: 500px;
   background-image: url("_pics/experience/experience-border-top.svg");
   background-position: bottom;
-  background-size: contain;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 #about-me .content-wrap {
@@ -762,11 +765,17 @@ body {
   }
 }
 .section#skills {
-  min-height: 400px;
-  height: 400px;
   background: green;
   transform: translateY(-10px);
-  background: radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0, 0, 0, 0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0, 0, 0, 0));
+}
+.section#skills .background-wrap {
+  z-index: -1;
+}
+.section#skills .background-wrap .background-colors.light {
+  background: radial-gradient(circle at 75% 50%, #4cf5a8 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 100%, rgba(0, 0, 0, 0));
+}
+.section#skills .background-wrap .background-colors.dark {
+  background: radial-gradient(circle at 75% 50%, var(--bg-color-top-left) 20%, rgba(0, 0, 0, 0)), radial-gradient(circle at 0% 0%, var(--bg-color-top-right) 100%, rgba(0, 0, 0, 0));
 }
 .section#skills .bg-border-wrap {
   display: flex;
@@ -776,6 +785,10 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 .section#skills .bg-border-wrap .border {
   position: relative;
@@ -789,6 +802,68 @@ body {
 .section#skills .bg-border-wrap .border.bottom svg {
   top: auto;
   bottom: 0px;
+}
+.section#skills .content-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 100px 60px;
+  color: white;
+}
+.section#skills .content-wrap h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.section#skills .content-wrap ul {
+  margin-bottom: 20px;
+}
+.section#skills .content-wrap ul:first-child {
+  margin-bottom: 40px;
+}
+.section#skills .content-wrap ul li {
+  margin-bottom: 10px;
+}
+.section#skills .content-wrap ul li label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.section#skills .content-wrap ul li label .checkbox {
+  height: 15px;
+  width: 15px;
+  background: white;
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 2px;
+}
+.section#skills .content-wrap ul li label .checkbox:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 11px;
+  height: 11px;
+  background: #A5A5A5;
+  opacity: 0;
+}
+.section#skills .content-wrap ul li label input:checked ~ .checkbox:after {
+  opacity: 1;
+}
+.section#skills .content-wrap ul li label input {
+  display: none;
+}
+.section#skills .right-side {
+  max-width: 50%;
+}
+.section#skills .right-side .word-cloud-wrap .item {
+  display: inline-block;
+  font-size: 36px;
+  margin: 5px;
 }
 
 [data-theme=dark] .section#skills .bg-border-wrap .border svg.light-border {

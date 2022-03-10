@@ -440,6 +440,58 @@
 
           </div>
         </div>
+        <div class="content-wrap">
+          <div class="left-side">
+            <h2>Skills</h2>
+            <div class="fiters-wrap">
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Professional Experience
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Personal Project / School Experience
+                  </label>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Front-End Development
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Back-End Development
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Programming
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox"/>
+                    <div class="checkbox"></div>Design
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="button">Clear            </div>
+          </div>
+          <div class="right-side">
+            <div class="word-cloud-wrap"> <div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div>
+            </div>
+          </div>
+        </div>
       </div><div class="theme-switch-wrap">
   <div class="inner-content">
     <div class="color-wrap">

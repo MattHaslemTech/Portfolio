@@ -1,4 +1,4 @@
-$(document).ready(function(){var themeSwitchWrap = $('.theme-switch-wrap');
+$(document).ready(function(){ var themeSwitchWrap = $('.theme-switch-wrap');
 
 themeSwitchWrap.on('click', function(){
   var currentTheme = $('body').attr('data-theme');
@@ -31,27 +31,27 @@ $(window).on('scroll', function(){
     var sectionTop = parentSection.offset().top;
 
 
-
     // If the section isn't even visible on the viewport yet, just forget about it
-    if(sectionTop - $(window).scrollTop() > screen.height || ( sectionTop + parentSection.outerHeight() ) < 0  )
+    if(sectionTop  > ($(window).height() + $(window).scrollTop())  || ( sectionTop + parentSection.outerHeight() ) < 0  )
       {return;}
 
     // The max height for the border
-    let maxBorderHeight = $(this).attr('data-max-height');
+    //let maxBorderHeight = $(this).attr('data-max-height');
 
     /// Get the percentage of the position of the section compared to the top of the window
     // (eg. When the top of the section is in the middle of the browser, the percentage will be 0.5)
-    var percentageToTop = (sectionTop - windowTop) / screen.height;
+    var percentageToTop = (sectionTop - windowTop) / $(window).height();
 
-    // Calculate the height of the border at this particular position
-    var borderHeight = (1 - percentageToTop) * maxBorderHeight;
+    // Calculate the height of the border at this particular position (the minus 0.3 is because we don't want the animation to start until it's 30% up)
+    var borderHeight = 1 - percentageToTop - 0.5;
 
-    if (borderHeight < maxBorderHeight)
+
+    if (borderHeight < 1)
     {
       // Set the height of each border
-      $(this).css('height', borderHeight + 'px');
+      $(this).css('transform', 'scaleY(' + borderHeight + ')');
     }
 
   });
 });
-});                   
+});                         

@@ -1,5 +1,5 @@
 //output: index.php
- 
+<!DOCTYPE html>
 html(lang="en" dir="ltr")     
   head   
     meta(charset="utf-8")            
@@ -71,6 +71,7 @@ html(lang="en" dir="ltr")
           
           
       .section#about-me(data-section="about")
+        
         .content-wrap
           .img-wrap
             img(src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer")
@@ -140,11 +141,12 @@ html(lang="en" dir="ltr")
           .background-colors.light
         .bg-border-wrap
           .border.top 
-            include _pics/skills/skills-border-top-dark.svg
-            include _pics/skills/skills-border-top-light.svg
+            img.border.light(src="_pics/skills/skills-border-top-light.svg" data-animate="true" data-max-scroll="0.2")
+            img.border.dark(src="_pics/skills/skills-border-top-dark.svg" data-animate="true" data-max-scroll="0.2")
           .border.bottom
-            include _pics/skills/skills-border-bottom-dark.svg 
-            include _pics/skills/skills-border-bottom-light.svg 
+            img.border.light(src="_pics/skills/skills-border-bottom-light.svg" data-animate="true" data-max-scroll="0.2")
+            img.border.dark(src="_pics/skills/skills-border-bottom-dark.svg" data-animate="true" data-max-scroll="0.2")
+
         .content-wrap
           .left-side
             h2 Skills
@@ -203,16 +205,24 @@ html(lang="en" dir="ltr")
               .item MVC
               .item Sitefinity
               .item Wordpress
-      .section.filler
+              
+      .section.filler(style="--filler-height: 100px;")
+      
       .section#my-work
         .bg-border-wrap
           .border.top 
-            include _pics/my-work/my-work-border-top-dark.svg
-            include _pics/my-work/my-work-border-top-light.svg
+            img.border.dark(src="_pics/my-work/my-work-border-top-dark.svg" data-animate="true" data-max-scroll="0.2")
+            img.border.light(src="_pics/my-work/my-work-border-top-light.svg" data-animate="true" data-max-scroll="0.2")
+            //include _pics/my-work/my-work-border-top-dark.svg
+            //include _pics/my-work/my-work-border-top-light.svg
           .border.bottom
-            include _pics/my-work/my-work-border-bottom-dark.svg
-            include _pics/my-work/my-work-border-bottom-light.svg 
-            
+            img.border.dark(src="_pics/my-work/my-work-border-bottom-dark.svg" data-animate="true" data-max-scroll="0.2")
+            img.border.light(src="_pics/my-work/my-work-border-bottom-light.svg" data-animate="true" data-max-scroll="0.2")
+
+            //include _pics/my-work/my-work-border-bottom-dark.svg
+            //include _pics/my-work/my-work-border-bottom-light.svg 
+        a test
+      .section.filler(style="--filler-height: 500px;")
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator  
       include _includes/_items/mobile-nav  

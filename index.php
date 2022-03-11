@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en" dir="ltr">    
   <head>  
     <meta charset="utf-8"/>
@@ -420,58 +420,8 @@
           <div class="background-colors light"></div>
         </div>
         <div class="bg-border-wrap">
-          <div class="border top"> <svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55" viewBox="0 0 1270 55.3">
-  <defs>
-    <style>
-      .skills-border-top-dark-cls-1 {
-        fill: #a0a0a0;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-dark-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g>
-  </g>
-</svg>
-<svg class="light-border border" data-animate="true" data-max-scroll="0.2" data-max-height="55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
-  <defs>
-    <style>
-      .skills-border-top-light-cls-1 {
-        fill: #f4f4f4;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-light-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g>
-  </g>
-</svg>
-
-          </div>
-          <div class="border bottom"><svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55" viewBox="0 0 1270 55.3">
-  <defs>
-    <style>
-      .skills-border-bottom-dark-cls-1 {
-        fill: #a0a0a0;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-dark-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g>
-  </g>
-</svg>
-<svg class="light-border border" data-animate="true" data-max-scroll="0.2" data-max-height="55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
-  <defs>
-    <style>
-      .skills-border-bottom-light-cls-1 {
-        fill: #f4f4f4;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-light-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g>
-  </g>
-</svg>
-
-          </div>
+          <div class="border top"> <img src="_pics/skills/skills-border-top-light.svg" data-animate="true" data-max-scroll="0.2" class="border light"/><img src="_pics/skills/skills-border-top-dark.svg" data-animate="true" data-max-scroll="0.2" class="border dark"/></div>
+          <div class="border bottom"><img src="_pics/skills/skills-border-bottom-light.svg" data-animate="true" data-max-scroll="0.2" class="border light"/><img src="_pics/skills/skills-border-bottom-dark.svg" data-animate="true" data-max-scroll="0.2" class="border dark"/></div>
         </div>
         <div class="content-wrap">
           <div class="left-side">
@@ -542,63 +492,20 @@
           </div>
         </div>
       </div>
-      <div class="section filler"></div>
+      <div style="--filler-height: 100px;" class="section filler"></div>
       <div id="my-work" class="section">
         <div class="bg-border-wrap">
-          <div class="border top"> <svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
-  <defs>
-    <style>
-      .my-work-border-top-dark-cls-1 {
-        fill: #a0a0a0;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-top-dark-cls-1" d="M1270,0C1106.91,46.77,894.74,88.61,646,89.81,387.25,91.06,167.25,48,0,0Z"/></g>
-  </g>
-</svg>
-<svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
-  <defs>
-    <style>
-      .my-work-border-top-light-cls-1 {
-        fill: #f4f4f4;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-top-light-cls-1" d="M1270,0C1106.91,46.77,894.74,88.61,646,89.81,387.25,91.06,167.25,48,0,0Z"/></g>
-  </g>
-</svg>
-
+          <div class="border top"> <img src="_pics/my-work/my-work-border-top-dark.svg" data-animate="true" data-max-scroll="0.2" class="border dark"/><img src="_pics/my-work/my-work-border-top-light.svg" data-animate="true" data-max-scroll="0.2" class="border light"/>
+            <!--include _pics/my-work/my-work-border-top-dark.svg-->
+            <!--include _pics/my-work/my-work-border-top-light.svg-->
           </div>
-          <div class="border bottom"><svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
-  <defs>
-    <style>
-      .my-work-border-bottom-dark-cls-1 {
-        fill: #a0a0a0;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-bottom-dark-cls-1" d="M0,89.84C163.09,43.07,375.26,1.23,624,0c258.75-1.25,478.75,41.85,646,89.81Z"/></g>
-  </g>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  viewBox="0 0 1270 89.84">
-  <defs>
-    <style>
-      .my-work-border-bottom-light-cls-1 {
-        fill: #f4f4f4;
-      }
-    </style>
-  </defs>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-bottom-light-cls-1" d="M0,89.84C163.09,43.07,375.26,1.23,624,0c258.75-1.25,478.75,41.85,646,89.81Z"/></g>
-  </g>
-</svg>
-
+          <div class="border bottom"><img src="_pics/my-work/my-work-border-bottom-dark.svg" data-animate="true" data-max-scroll="0.2" class="border dark"/><img src="_pics/my-work/my-work-border-bottom-light.svg" data-animate="true" data-max-scroll="0.2" class="border light"/>
+            <!--include _pics/my-work/my-work-border-bottom-dark.svg-->
+            <!--include _pics/my-work/my-work-border-bottom-light.svg -->
           </div>
-        </div>
-      </div><div class="theme-switch-wrap">
+        </div><a>test</a>
+      </div>
+      <div style="--filler-height: 500px;" class="section filler"></div><div class="theme-switch-wrap">
   <div class="inner-content">
     <div class="color-wrap">
       <div class="theme-light"></div>

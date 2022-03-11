@@ -1,2 +1,39 @@
-.border[data-animate="true"]
-  height: 0px
+[data-theme="dark"]
+  img.border.light
+    opacity: 0
+[data-theme="light"]
+  img.border.dark
+    opacity: 0
+
+
+.bg-border-wrap
+  @include flex(column, stretch, space-between, nowrap)
+  width: 100%
+  height: 100%
+
+  position: absolute
+  top: 0px
+  left: 0px
+  z-index: -1
+
+  & > .border
+    position: relative
+
+img.border[data-animate="true"]
+  transition: all 0ms linear
+  transform: scaleY(0)
+  transform-origin: center top
+
+  position: absolute
+  top: 0px
+  width: 100%
+
+.border.top
+  position: relative
+
+.border.bottom
+  position: relative
+  img.border[data-animate="true"]
+    transform-origin: center bottom
+    top: auto
+    bottom: 0px

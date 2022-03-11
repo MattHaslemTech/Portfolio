@@ -406,7 +406,7 @@
                   <div class="image-wrap"><img src="_pics/experience/OldDominionUniversity.svg"/></div>
                   <div class="text-wrap">
                     <h4>Old Dominion University</h4>
-                    <div class="caption">Communications - Bachelor of Science<br/><em>( August 2011 - December 2016 )</em></div>
+                    <div class="caption">Communications - Bachelor of Science <br/><em>( August 2011 - December 2016 )</em></div>
                   </div>
                 </div>
               </div>
@@ -420,8 +420,19 @@
           <div class="background-colors light"></div>
         </div>
         <div class="bg-border-wrap">
-          <div class="border top"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-top-dark-cls-1{fill:#a0a0a0;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-dark-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g></g></svg>
-<svg class="light-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
+          <div class="border top"> <svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55" viewBox="0 0 1270 55.3">
+  <defs>
+    <style>
+      .skills-border-top-dark-cls-1 {
+        fill: #a0a0a0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-top-dark-cls-1" d="M0,55.3V.08H1270C948.14-1,580.61,8.45,189,39Q91.52,46.64,0,55.3Z"/></g>
+  </g>
+</svg>
+<svg class="light-border border" data-animate="true" data-max-scroll="0.2" data-max-height="55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
   <defs>
     <style>
       .skills-border-top-light-cls-1 {
@@ -435,8 +446,30 @@
 </svg>
 
           </div>
-          <div class="border bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-bottom-dark-cls-1{fill:#a0a0a0;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-dark-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g></g></svg>
-<svg class="light-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3"><defs><style>.skills-border-bottom-light-cls-1{fill:#f4f4f4;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-light-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g></g></svg>
+          <div class="border bottom"><svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55" viewBox="0 0 1270 55.3">
+  <defs>
+    <style>
+      .skills-border-bottom-dark-cls-1 {
+        fill: #a0a0a0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-dark-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g>
+  </g>
+</svg>
+<svg class="light-border border" data-animate="true" data-max-scroll="0.2" data-max-height="55" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 55.3">
+  <defs>
+    <style>
+      .skills-border-bottom-light-cls-1 {
+        fill: #f4f4f4;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="skills-border-bottom-light-cls-1" d="M0,0V55.21H1270c-321.86,1.1-689.39-8.36-1081-38.94Q91.52,8.66,0,0Z"/></g>
+  </g>
+</svg>
 
           </div>
         </div>
@@ -488,8 +521,81 @@
             <div class="button">Clear            </div>
           </div>
           <div class="right-side">
-            <div class="word-cloud-wrap"> <div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div><div class="item">Nice</div>
+            <div class="word-cloud-wrap"> 
+              <div class="item">HTML</div>
+              <div class="item">CSS</div>
+              <div class="item">jQuery</div>
+              <div class="item">JavaScript</div>
+              <div class="item">PHP</div>
+              <div class="item">MySQL</div>
+              <div class="item">Ajax</div>
+              <div class="item">SASS</div>
+              <div class="item">SCSS</div>
+              <div class="item">C++</div>
+              <div class="item">C#</div>
+              <div class="item">Python</div>
+              <div class="item">Java</div>
+              <div class="item">MVC</div>
+              <div class="item">Sitefinity</div>
+              <div class="item">Wordpress</div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="section filler"></div>
+      <div id="my-work" class="section">
+        <div class="bg-border-wrap">
+          <div class="border top"> <svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
+  <defs>
+    <style>
+      .my-work-border-top-dark-cls-1 {
+        fill: #a0a0a0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-top-dark-cls-1" d="M1270,0C1106.91,46.77,894.74,88.61,646,89.81,387.25,91.06,167.25,48,0,0Z"/></g>
+  </g>
+</svg>
+<svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
+  <defs>
+    <style>
+      .my-work-border-top-light-cls-1 {
+        fill: #f4f4f4;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-top-light-cls-1" d="M1270,0C1106.91,46.77,894.74,88.61,646,89.81,387.25,91.06,167.25,48,0,0Z"/></g>
+  </g>
+</svg>
+
+          </div>
+          <div class="border bottom"><svg class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1270 89.84">
+  <defs>
+    <style>
+      .my-work-border-bottom-dark-cls-1 {
+        fill: #a0a0a0;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-bottom-dark-cls-1" d="M0,89.84C163.09,43.07,375.26,1.23,624,0c258.75-1.25,478.75,41.85,646,89.81Z"/></g>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="border" data-animate="true" data-max-scroll="0.2" data-max-height="55"  viewBox="0 0 1270 89.84">
+  <defs>
+    <style>
+      .my-work-border-bottom-light-cls-1 {
+        fill: #f4f4f4;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1"><path class="my-work-border-bottom-light-cls-1" d="M0,89.84C163.09,43.07,375.26,1.23,624,0c258.75-1.25,478.75,41.85,646,89.81Z"/></g>
+  </g>
+</svg>
+
           </div>
         </div>
       </div><div class="theme-switch-wrap">

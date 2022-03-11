@@ -106,6 +106,7 @@ a:hover {
   max-width: min(1270px, 100%);
   min-height: 100%;
   background: var(--body-background-color);
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 900px) {
@@ -280,6 +281,21 @@ body {
 .button:hover, .button.active {
   cursor: pointer;
   background-color: var(--link-color-dark);
+}
+
+.border[data-animate=true] {
+  height: 0px;
+}
+
+.section.filler {
+  transition: background-color 400ms ease-in-out;
+  height: 200px;
+  background: #F4F4F4;
+  transform: translateY(-10px);
+}
+
+[data-theme=dark] .section.filler {
+  background: #A0A0A0;
 }
 
 .page-wrap.home {
@@ -859,6 +875,13 @@ body {
 }
 .section#skills .right-side {
   max-width: 50%;
+}
+.section#skills .right-side .word-cloud-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .section#skills .right-side .word-cloud-wrap .item {
   display: inline-block;

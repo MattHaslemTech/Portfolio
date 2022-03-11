@@ -5,7 +5,6 @@
 
 .section#skills
   background: green
-
   transform: translateY(-10px)
 
   //background:  radial-gradient(circle at 0% 0%, var(--bg-color-top-left) 20%, rgba(0,0,0,0)), radial-gradient(circle at 100% 0%, var(--bg-color-top-right) 20%, rgba(0,0,0,0)), radial-gradient(circle at 80% 80%, var(--bg-color-bottom-right) 20%, rgba(0,0,0,0) 45%), radial-gradient(circle at 0% 100%, var(--bg-color-bottom-left) 20%, rgba(0,0,0,0))
@@ -92,6 +91,7 @@
   .right-side
     max-width: 50%
     .word-cloud-wrap
+      @include flex(row, center, center, wrap)
       .item
         display: inline-block
         font-size: 36px

@@ -426,69 +426,70 @@
         <div class="content-wrap">
           <div class="left-side">
             <h2>Skills</h2>
-            <div class="fiters-wrap">
+            <div class="filters-wrap">
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox"/>
-                    <div class="checkbox"></div>Professional Experience
+                    <input type="checkbox" value="professional" class="skill-filter radio"/>
+                    <div class="checkbox radio"></div>Professional Experience
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox"/>
-                    <div class="checkbox"></div>Personal Project / School Experience
+                    <input type="checkbox" value="personal" class="skill-filter radio"/>
+                    <div class="checkbox radio"></div>Personal Project / School Experience
                   </label>
                 </li>
               </ul>
               <ul>
                 <li>
                   <label>
-                    <input type="checkbox"/>
+                    <input type="checkbox" value="front-end" class="skill-filter"/>
                     <div class="checkbox"></div>Front-End Development
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox"/>
+                    <input type="checkbox" value="back-end" class="skill-filter"/>
                     <div class="checkbox"></div>Back-End Development
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox"/>
+                    <input type="checkbox" value="programming" class="skill-filter"/>
                     <div class="checkbox"></div>Programming
                   </label>
                 </li>
                 <li>
                   <label>
-                    <input type="checkbox"/>
+                    <input type="checkbox" value="design" class="skill-filter"/>
                     <div class="checkbox"></div>Design
                   </label>
                 </li>
               </ul>
             </div>
-            <div class="button">Clear            </div>
+            <div class="button clear-skill-filters">Clear            </div>
           </div>
           <div class="right-side">
-            <div class="word-cloud-wrap"> 
-              <div class="item">HTML</div>
-              <div class="item">CSS</div>
-              <div class="item">jQuery</div>
-              <div class="item">JavaScript</div>
-              <div class="item">PHP</div>
-              <div class="item">MySQL</div>
-              <div class="item">Ajax</div>
-              <div class="item">SASS</div>
-              <div class="item">SCSS</div>
-              <div class="item">C++</div>
-              <div class="item">C#</div>
-              <div class="item">Python</div>
-              <div class="item">Java</div>
-              <div class="item">MVC</div>
-              <div class="item">Sitefinity</div>
-              <div class="item">Wordpress</div>
+            <div class="skills-item-wrap">
+              <div data-priority="1" data-professional="professional personal" data-type="front-end" class="item">CSS</div>
+              <div data-priority="1" data-professional="professional personal" data-type="front-end" class="item">HTML</div>
+              <div data-priority="1" data-professional="professional personal" data-type="front-end programming" class="item">jQuery</div>
+              <div data-priority="2" data-professional="professional personal" data-type="front-end programming" class="item">JavaScript</div>
+              <div data-priority="2" data-professional="professional personal" data-type="back-end programming" class="item">PHP</div>
+              <div data-priority="2" data-professional="professional personal" data-type="back-end" class="item">MySQL</div>
+              <div data-priority="2" data-professional="professional personal" data-type="front-end programming" class="item">Ajax</div>
+              <div data-priority="1" data-professional="personal" data-type="front-end" class="item">SASS</div>
+              <div data-priority="2" data-professional="personal" data-type="front-end" class="item">SCSS</div>
+              <div data-priority="2" data-professional="personal" data-type="programming" class="item">C++</div>
+              <div data-priority="2" data-professional="professional personal" data-type="back-end programming" class="item">C#</div>
+              <div data-priority="3" data-professional="personal" data-type="programming" class="item">Python</div>
+              <div data-priority="2" data-professional="personal" data-type="programming" class="item">Java</div>
+              <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">MVC</div>
+              <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">Sitefinity</div>
+              <div data-priority="3" data-professional="professional personal" data-type="front-end back-end" class="item">Wordpress</div>
             </div>
+            <div filter="false" class="word-cloud-wrap"></div>
           </div>
         </div>
       </div>

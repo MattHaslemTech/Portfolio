@@ -151,61 +151,64 @@ html(lang="en" dir="ltr")
           .left-side
             h2 Skills
             
-            .fiters-wrap
+            .filters-wrap
               ul
                 li
                   label
-                    input(type="checkbox")
-                    .checkbox
+                    input.skill-filter.radio(type="checkbox" value="professional")
+                    .checkbox.radio
                     | Professional Experience
                 li
                   label
-                    input(type="checkbox")
-                    .checkbox
+                    input.skill-filter.radio(type="checkbox" value="personal")
+                    .checkbox.radio
                     | Personal Project / School Experience
               ul
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="front-end")
                     .checkbox
                     | Front-End Development
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="back-end")
                     .checkbox
                     | Back-End Development
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="programming")
                     .checkbox
                     | Programming
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="design")
                     .checkbox
                     | Design
-            .button
+            .button.clear-skill-filters
               | Clear            
            
           .right-side
-            .word-cloud-wrap 
-              .item HTML
-              .item CSS
-              .item jQuery
-              .item JavaScript
-              .item PHP
-              .item MySQL
-              .item Ajax
-              .item SASS
-              .item SCSS
-              .item C++
-              .item C#
-              .item Python
-              .item Java
-              .item MVC
-              .item Sitefinity
-              .item Wordpress
+            .skills-item-wrap
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end") CSS
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end") HTML
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end programming") jQuery
+              .item(data-priority="2" data-professional="professional personal" data-type="front-end programming") JavaScript
+              .item(data-priority="2" data-professional="professional personal" data-type="back-end programming") PHP
+              .item(data-priority="2" data-professional="professional personal" data-type="back-end") MySQL
+              .item(data-priority="2" data-professional="professional personal" data-type="front-end programming") Ajax
+              .item(data-priority="1" data-professional="personal" data-type="front-end") SASS
+              .item(data-priority="2" data-professional="personal" data-type="front-end") SCSS
+              .item(data-priority="2" data-professional="personal" data-type="programming") C++
+              .item(data-priority="2" data-professional="professional personal" data-type="back-end programming") C#
+              .item(data-priority="3" data-professional="personal" data-type="programming") Python
+              .item(data-priority="2" data-professional="personal" data-type="programming") Java
+              .item(data-priority="3" data-professional="professional" data-type="front-end back-end") MVC
+              .item(data-priority="3" data-professional="professional" data-type="front-end back-end") Sitefinity
+              .item(data-priority="3" data-professional="professional personal" data-type="front-end back-end") Wordpress
               
+            .word-cloud-wrap(filter="false")
+
+            
       .section.filler(style="--filler-height: 100px;")
       
       .section#my-work

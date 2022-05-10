@@ -19,7 +19,7 @@
 
   .content-wrap
     @include flex(row, center, space-between, nowrap)
-    padding: 100px 60px
+    padding: 100px 0px
     color: white
 
     h2
@@ -57,6 +57,11 @@
               background: #A5A5A5
               opacity: 0
 
+            &.radio
+              border-radius: 100px
+              &::after
+                border-radius: 100px
+
           input:checked ~ .checkbox
             &:after
               opacity: 1
@@ -65,14 +70,34 @@
             display: none
 
   .right-side
-    max-width: 50%
+    max-width: 65%
+
+    .skills-item-wrap
+      display: none
+
     .word-cloud-wrap
       @include flex(row, center, center, wrap)
       .item
+        @include transition(300ms)
         display: inline-block
         font-size: 36px
-        margin: 5px
+        margin: 15px
+        transform: scale(1, 1)
 
+      $max-font-size: 56px
+      @for $priority from 1 through 5
+        .item[data-priority="#{$priority}"]
+          font-size: calc(#{$max-font-size} - #{$priority} * 12px)
+          line-height: calc(#{$max-font-size} - #{$priority} * 12px)
+
+      &[filter="true"]
+        .item:not(.active)
+          opacity: 0.4
+          transform: scale(0.9, 0.9)
+
+        .item.active
+          transform: scale(1.2, 1.2)
+          margin: 10px 20px
 
 [data-theme="dark"]
   .section#skills

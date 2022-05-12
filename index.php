@@ -476,7 +476,7 @@
               <div data-priority="1" data-professional="professional personal" data-type="front-end" class="item">HTML</div>
               <div data-priority="1" data-professional="professional personal" data-type="front-end programming" class="item">jQuery</div>
               <div data-priority="2" data-professional="professional personal" data-type="front-end programming" class="item">JavaScript</div>
-              <div data-priority="2" data-professional="professional personal" data-type="back-end programming" class="item">PHP</div>
+              <div data-priority="1" data-professional="professional personal" data-type="back-end programming" class="item">PHP</div>
               <div data-priority="2" data-professional="professional personal" data-type="back-end" class="item">MySQL</div>
               <div data-priority="2" data-professional="professional personal" data-type="front-end programming" class="item">Ajax</div>
               <div data-priority="1" data-professional="personal" data-type="front-end" class="item">SASS</div>
@@ -504,7 +504,11 @@
             <!--include _pics/my-work/my-work-border-bottom-dark.svg-->
             <!--include _pics/my-work/my-work-border-bottom-light.svg -->
           </div>
-        </div><a>test</a>
+        </div>
+        <div class="content-wrap">
+          <h1>My Work</h1>
+          <div class="slideshow"></div>
+        </div>
       </div>
       <div style="--filler-height: 500px;" class="section filler"></div><div class="theme-switch-wrap">
   <div class="inner-content">

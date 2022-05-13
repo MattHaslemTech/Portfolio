@@ -10,7 +10,7 @@
     <title>Matt Haslem - Web Developer</title>
   </head>
   <body data-theme="light"> 
-    <div id="hero" class="section larger-than-tablet-hide">
+    <div id="hero" data-section-name="Home" class="section top-section larger-than-tablet-hide">
       <div class="background-wrap">
         <div class="background-colors dark"> </div>
         <div class="background-colors light"></div>
@@ -130,7 +130,7 @@
       </div>
     </div>
     <div id="all-content-wrap">
-      <div id="hero" class="section tablet-hide"> 
+      <div id="hero" data-section-name="Home" class="section tablet-hide top-section">
         <div class="background-wrap">
           <div class="background-colors dark"> </div>
           <div class="background-colors light"></div>
@@ -257,7 +257,7 @@
           <div class="vertical-divider"></div><a href="#contact">Contact</a>
         </div>
       </div>
-      <div id="about-me" data-section="about" class="section">
+      <div id="about-me" data-section="about" data-section-name="About Me" class="section top-section">
         <div class="content-wrap">
           <div class="img-wrap"><img src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer"/>
             <div class="circles-wrap">
@@ -371,7 +371,7 @@
           </div>
         </div>
       </div>
-      <div id="experience" data-section="experience" class="section">
+      <div id="experience" data-section="experience" data-section-name="Experience" class="section top-section">
         <div class="content-wrap">
           <div class="section experience">
             <h2>Experience</h2>
@@ -414,7 +414,7 @@
           </div>
         </div>
       </div>
-      <div id="skills" class="section">
+      <div id="skills" data-section-name="Skills" class="section top-section">
         <div class="background-wrap">
           <div class="background-colors dark"> </div>
           <div class="background-colors light"></div>
@@ -494,7 +494,7 @@
         </div>
       </div>
       <div style="--filler-height: 100px;" class="section filler"></div>
-      <div id="my-work" class="section">
+      <div id="my-work" data-section-name="My Work" class="section top-section">
         <div class="bg-border-wrap">
           <div class="border top"> <img src="_pics/my-work/my-work-border-top-dark.svg" data-animate="true" data-max-scroll="0.2" class="border dark"/><img src="_pics/my-work/my-work-border-top-light.svg" data-animate="true" data-max-scroll="0.2" class="border light"/>
             <!--include _pics/my-work/my-work-border-top-dark.svg-->
@@ -506,7 +506,7 @@
           </div>
         </div>
         <div class="content-wrap">
-          <h1>My Work</h1>
+          <h2>My Work</h2>
           <div class="slideshow"></div>
         </div>
       </div>
@@ -522,8 +522,8 @@
 </div>
 
       <div id="section-navigator">
-        <div class="arrow button down"></div>
-        <div class="arrow button up"></div>
+        <div data-direction="next" class="arrow button down"></div>
+        <div data-direction="prev" class="arrow button up"></div>
         <div class="text">Home</div>
       </div>
       <div id="mobile-nav">

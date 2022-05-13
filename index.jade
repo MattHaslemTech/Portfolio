@@ -7,7 +7,7 @@ html(lang="en" dir="ltr")
     include _scripts/scripts.php 
     title Matt Haslem - Web Developer
   body(data-theme="light") 
-    .section#hero.larger-than-tablet-hide
+    .section.top-section#hero.larger-than-tablet-hide(data-section-name="Home")
       .background-wrap
         .background-colors.dark 
         .background-colors.light
@@ -34,7 +34,7 @@ html(lang="en" dir="ltr")
     #all-content-wrap
        
       
-      .section#hero.tablet-hide 
+      .section#hero.tablet-hide.top-section(data-section-name="Home")
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -70,7 +70,7 @@ html(lang="en" dir="ltr")
           a(href="#contact") Contact
           
           
-      .section#about-me(data-section="about")
+      .section#about-me(data-section="about").top-section(data-section-name="About Me")
         
         .content-wrap
           .img-wrap
@@ -90,7 +90,7 @@ html(lang="en" dir="ltr")
             p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam soluta incidunt error rerum a ad optio accusantium quidem, excepturi voluptas voluptatibus repellendus eos officia quaerat perferendis ea eius aliquid!
 
-      .section#experience(data-section="experience")
+      .section#experience(data-section="experience").top-section(data-section-name="Experience")
         .content-wrap
           .section.experience
             h2 Experience
@@ -135,7 +135,7 @@ html(lang="en" dir="ltr")
                       br
                       em ( August 2011 - December 2016 )
                     
-      .section#skills
+      .section#skills.top-section(data-section-name="Skills")
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -211,7 +211,7 @@ html(lang="en" dir="ltr")
             
       .section.filler(style="--filler-height: 100px;")
       
-      .section#my-work
+      .section#my-work.top-section(data-section-name="My Work")
         .bg-border-wrap
           .border.top 
             img.border.dark(src="_pics/my-work/my-work-border-top-dark.svg" data-animate="true" data-max-scroll="0.2")
@@ -225,7 +225,7 @@ html(lang="en" dir="ltr")
             //include _pics/my-work/my-work-border-bottom-dark.svg
             //include _pics/my-work/my-work-border-bottom-light.svg 
         .content-wrap
-          h1 My Work
+          h2 My Work
           .slideshow
       .section.filler(style="--filler-height: 500px;")
       include _includes/_items/theme-switch.php 
@@ -234,6 +234,6 @@ html(lang="en" dir="ltr")
       
     
  
-   
+    
  
  

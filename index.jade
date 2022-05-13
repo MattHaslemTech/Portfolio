@@ -7,7 +7,7 @@ html(lang="en" dir="ltr")
     include _scripts/scripts.php 
     title Matt Haslem - Web Developer
   body(data-theme="light") 
-    .section#hero.larger-than-tablet-hide
+    .section.top-section#hero.larger-than-tablet-hide(data-section-name="Home")
       .background-wrap
         .background-colors.dark 
         .background-colors.light
@@ -34,7 +34,7 @@ html(lang="en" dir="ltr")
     #all-content-wrap
        
       
-      .section#hero.tablet-hide 
+      .section#hero.tablet-hide.top-section(data-section-name="Home")
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -70,7 +70,7 @@ html(lang="en" dir="ltr")
           a(href="#contact") Contact
           
           
-      .section#about-me(data-section="about")
+      .section#about-me(data-section="about").top-section(data-section-name="About Me")
         
         .content-wrap
           .img-wrap
@@ -90,7 +90,7 @@ html(lang="en" dir="ltr")
             p
               | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam soluta incidunt error rerum a ad optio accusantium quidem, excepturi voluptas voluptatibus repellendus eos officia quaerat perferendis ea eius aliquid!
 
-      .section#experience(data-section="experience")
+      .section#experience(data-section="experience").top-section(data-section-name="Experience")
         .content-wrap
           .section.experience
             h2 Experience
@@ -135,7 +135,7 @@ html(lang="en" dir="ltr")
                       br
                       em ( August 2011 - December 2016 )
                     
-      .section#skills
+      .section#skills.top-section(data-section-name="Skills")
         .background-wrap
           .background-colors.dark 
           .background-colors.light
@@ -151,64 +151,67 @@ html(lang="en" dir="ltr")
           .left-side
             h2 Skills
             
-            .fiters-wrap
+            .filters-wrap
               ul
                 li
                   label
-                    input(type="checkbox")
-                    .checkbox
+                    input.skill-filter.radio(type="checkbox" value="professional")
+                    .checkbox.radio
                     | Professional Experience
                 li
                   label
-                    input(type="checkbox")
-                    .checkbox
+                    input.skill-filter.radio(type="checkbox" value="personal")
+                    .checkbox.radio
                     | Personal Project / School Experience
               ul
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="front-end")
                     .checkbox
                     | Front-End Development
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="back-end")
                     .checkbox
                     | Back-End Development
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="programming")
                     .checkbox
                     | Programming
                 li
                   label
-                    input(type="checkbox")
+                    input.skill-filter(type="checkbox" value="design")
                     .checkbox
                     | Design
-            .button
+            .button.clear-skill-filters
               | Clear            
            
           .right-side
-            .word-cloud-wrap 
-              .item HTML
-              .item CSS
-              .item jQuery
-              .item JavaScript
-              .item PHP
-              .item MySQL
-              .item Ajax
-              .item SASS
-              .item SCSS
-              .item C++
-              .item C#
-              .item Python
-              .item Java
-              .item MVC
-              .item Sitefinity
-              .item Wordpress
+            .skills-item-wrap
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end") CSS
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end") HTML
+              .item(data-priority="1" data-professional="professional personal" data-type="front-end programming") jQuery
+              .item(data-priority="2" data-professional="professional personal" data-type="front-end programming") JavaScript
+              .item(data-priority="1" data-professional="professional personal" data-type="back-end programming") PHP
+              .item(data-priority="2" data-professional="professional personal" data-type="back-end") MySQL
+              .item(data-priority="2" data-professional="professional personal" data-type="front-end programming") Ajax
+              .item(data-priority="1" data-professional="personal" data-type="front-end") SASS
+              .item(data-priority="2" data-professional="personal" data-type="front-end") SCSS
+              .item(data-priority="2" data-professional="personal" data-type="programming") C++
+              .item(data-priority="2" data-professional="professional personal" data-type="back-end programming") C#
+              .item(data-priority="3" data-professional="personal" data-type="programming") Python
+              .item(data-priority="2" data-professional="personal" data-type="programming") Java
+              .item(data-priority="3" data-professional="professional" data-type="front-end back-end") MVC
+              .item(data-priority="3" data-professional="professional" data-type="front-end back-end") Sitefinity
+              .item(data-priority="3" data-professional="professional personal" data-type="front-end back-end") Wordpress
               
+            .word-cloud-wrap(filter="false")
+
+            
       .section.filler(style="--filler-height: 100px;")
       
-      .section#my-work
+      .section#my-work.top-section(data-section-name="My Work")
         .bg-border-wrap
           .border.top 
             img.border.dark(src="_pics/my-work/my-work-border-top-dark.svg" data-animate="true" data-max-scroll="0.2")
@@ -221,7 +224,9 @@ html(lang="en" dir="ltr")
 
             //include _pics/my-work/my-work-border-bottom-dark.svg
             //include _pics/my-work/my-work-border-bottom-light.svg 
-        a test
+        .content-wrap
+          h2 My Work
+          .slideshow
       .section.filler(style="--filler-height: 500px;")
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator  
@@ -229,6 +234,6 @@ html(lang="en" dir="ltr")
       
     
  
-   
+    
  
  

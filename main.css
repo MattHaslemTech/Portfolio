@@ -842,7 +842,7 @@ img.border[data-animate=true] {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding: 100px 60px;
+  padding: 100px 0px;
   color: white;
 }
 .section#skills .content-wrap h2 {
@@ -884,6 +884,12 @@ img.border[data-animate=true] {
   background: #A5A5A5;
   opacity: 0;
 }
+.section#skills .content-wrap ul li label .checkbox.radio {
+  border-radius: 100px;
+}
+.section#skills .content-wrap ul li label .checkbox.radio::after {
+  border-radius: 100px;
+}
 .section#skills .content-wrap ul li label input:checked ~ .checkbox:after {
   opacity: 1;
 }
@@ -891,7 +897,10 @@ img.border[data-animate=true] {
   display: none;
 }
 .section#skills .right-side {
-  max-width: 50%;
+  max-width: 65%;
+}
+.section#skills .right-side .skills-item-wrap {
+  display: none;
 }
 .section#skills .right-side .word-cloud-wrap {
   display: flex;
@@ -901,9 +910,39 @@ img.border[data-animate=true] {
   flex-wrap: wrap;
 }
 .section#skills .right-side .word-cloud-wrap .item {
+  transition: all 300ms ease-in-out;
   display: inline-block;
   font-size: 36px;
-  margin: 5px;
+  margin: 15px;
+  transform: scale(1, 1);
+}
+.section#skills .right-side .word-cloud-wrap .item[data-priority="1"] {
+  font-size: calc(56px - 1 * 12px);
+  line-height: calc(56px - 1 * 12px);
+}
+.section#skills .right-side .word-cloud-wrap .item[data-priority="2"] {
+  font-size: calc(56px - 2 * 12px);
+  line-height: calc(56px - 2 * 12px);
+}
+.section#skills .right-side .word-cloud-wrap .item[data-priority="3"] {
+  font-size: calc(56px - 3 * 12px);
+  line-height: calc(56px - 3 * 12px);
+}
+.section#skills .right-side .word-cloud-wrap .item[data-priority="4"] {
+  font-size: calc(56px - 4 * 12px);
+  line-height: calc(56px - 4 * 12px);
+}
+.section#skills .right-side .word-cloud-wrap .item[data-priority="5"] {
+  font-size: calc(56px - 5 * 12px);
+  line-height: calc(56px - 5 * 12px);
+}
+.section#skills .right-side .word-cloud-wrap[filter=true] .item:not(.active) {
+  opacity: 0.4;
+  transform: scale(0.9, 0.9);
+}
+.section#skills .right-side .word-cloud-wrap[filter=true] .item.active {
+  transform: scale(1.2, 1.2);
+  margin: 10px 20px;
 }
 
 [data-theme=dark] .section#skills .bg-border-wrap .border svg.light-border {
@@ -927,6 +966,14 @@ img.border[data-animate=true] {
   top: 0px;
   left: 0px;
   z-index: 0;
+}
+.section#my-work .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 80px 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

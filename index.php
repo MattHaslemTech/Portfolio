@@ -527,12 +527,12 @@
       <div id="talk" data-section-name="Talk" class="section top-section">
         <div class="content-wrap">
           <h2>Want to Talk?</h2>
-          <div class="button">Send a Message</div>
+          <div data-open-popup="contact" class="button">Send a Message</div>
         </div>
         <div class="social-links-wrap"> <a href="https://github.com/MattHaslemTech" target="_blank" class="item"><img src="_pics/icons/github_small.svg" class="icon"/>
             <div class="text">GitHub</div></a><a href="https://www.linkedin.com/in/thematthaslem/" target="_blank" class="item"><img src="_pics/icons/linkedin_small.svg" class="icon"/>
             <div class="text">LinkedIn</div></a><a href="mailto:matt@matthaslem.tech" class="item"><img src="_pics/icons/email_small.svg" class="icon"/>
-            <div class="text">Email</div></a></div>
+            <div class="text">Email      </div></a></div>
       </div><div class="theme-switch-wrap">
   <div class="inner-content">
     <div class="color-wrap">
@@ -552,6 +552,15 @@
       <div id="mobile-nav">
         <div class="nav-button button"></div>
         <div class="nav-links-wrap"><a href="#about">About Me</a><a href="#experience">Experience & Education</a><a href="#skills">Skills</a><a href="#mywork">My Work</a><a href="#contact">Contact</a></div>
+      </div>
+      <div data-popup-name="contact" class="full-popup-wrap">
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <h1>POPUPS</h1>
+        </div>
+        <div class="overlay"></div>
       </div>
     </div>
   </body>

@@ -1,0 +1,79 @@
+.full-popup-wrap
+  @include flex(column, center, center, nowrap)
+  position: fixed
+  top: 0
+  left: 0
+
+  width: 100vw
+  max-height: 0px
+  height: 0px
+
+  overflow: hidden
+
+  & *
+    display: none
+
+  .close-popup
+    position: fixed
+    right: 30px
+    top: 20px
+
+
+    padding: 15px
+
+    border-radius: 4px
+
+    z-index: 99
+
+    &:hover
+      cursor: pointer
+      background: rgba(0,0,0,0.4)
+
+    img
+      width: 10px
+      height: 10px
+
+      margin-right: 10px
+
+    .text
+      color: #fff
+
+  .overlay
+    transition: opacity 3s linear
+
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -1
+
+    background: rgba(30,30,30,0.4)
+
+    opacity: 0
+
+    width: 100vw
+    max-height: 0px
+    height: 0px
+
+  .content-wrap
+    @include flex(column, center, center, nowrap)
+    background: var(--body-background-color)
+    padding: 20px
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px
+
+
+  &.open
+    max-height: 100vh
+    height: 100vh
+
+    & *
+      display: flex
+
+    .close-popup
+      @include flex(row, center, flex-end, nowrap)
+
+    .overlay
+      max-height: 100vh
+      height: 100vh
+
+      opacity: 1

@@ -249,7 +249,7 @@ html(lang="en" dir="ltr")
       .section#talk.top-section(data-section-name="Talk")
         .content-wrap
           h2 Want to Talk?
-          .button Send a Message
+          .button(data-open-popup="contact") Send a Message
             
         .social-links-wrap 
           a.item(href="https://github.com/MattHaslemTech" target="_blank")
@@ -260,13 +260,15 @@ html(lang="en" dir="ltr")
             .text LinkedIn
           a.item(href="mailto:matt@matthaslem.tech")
             img.icon(src="_pics/icons/email_small.svg")
-            .text Email
+            .text Email      
         
-      include _includes/_items/theme-switch.php 
+      include _includes/_items/theme-switch.php  
       include _includes/_items/section-navigator  
       include _includes/_items/mobile-nav  
       
-    
+      include _includes/_popups/contact   
+      
+     
  
     
  

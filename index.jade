@@ -65,9 +65,9 @@ html(lang="en" dir="ltr")
           .vertical-divider
           a(href="#skills") Skills
           .vertical-divider
-          a(href="#mywork") My Work
+          a(href="#my-work") My Work
           .vertical-divider
-          a(href="#contact") Contact
+          a(href="#talk") Contact
           
           
       .section#about-me(data-section="about").top-section(data-section-name="About Me")
@@ -201,6 +201,7 @@ html(lang="en" dir="ltr")
               .item(data-priority="2" data-professional="personal" data-type="programming") C++
               .item(data-priority="2" data-professional="professional personal" data-type="back-end programming") C#
               .item(data-priority="3" data-professional="personal" data-type="programming") Python
+              .item(data-priority="2" data-professional="professional personal" data-type="front-end back-end") React
               .item(data-priority="2" data-professional="personal" data-type="programming") Java
               .item(data-priority="3" data-professional="professional" data-type="front-end back-end") MVC
               .item(data-priority="2" data-professional="professional" data-type="front-end back-end") Sitefinity
@@ -244,14 +245,23 @@ html(lang="en" dir="ltr")
               .item 
                 img(src="_pics/my-work/chalk.png")
               
+      .section.filler(style="--filler-height: 200px;")
       .section#talk.top-section(data-section-name="Talk")
-        .background-wrap
-          .background-colors.dark 
-          .background-colors.light
         .content-wrap
-          h1 Talk?
+          h2 Want to Talk?
+          .button Send a Message
+            
+        .social-links-wrap 
+          a.item(href="https://github.com/MattHaslemTech" target="_blank")
+            img.icon(src="_pics/icons/github_small.svg")
+            .text GitHub
+          a.item(href="https://www.linkedin.com/in/thematthaslem/" target="_blank")
+            img.icon(src="_pics/icons/linkedin_small.svg")
+            .text LinkedIn
+          a.item(href="mailto:matt@matthaslem.tech")
+            img.icon(src="_pics/icons/email_small.svg")
+            .text Email
         
-      .section.filler(style="--filler-height: 500px;")
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator  
       include _includes/_items/mobile-nav  

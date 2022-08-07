@@ -1071,5 +1071,77 @@ img.border[data-animate=true] {
     font-size: 36px;
   }
 }
+.section#talk {
+  transform: translateY(-10px);
+  padding-top: 200px;
+  padding-bottom: 40px;
+  position: relative;
+  background: #545454;
+}
+.section#talk .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  transition: all 400ms ease-in-out;
+  width: min(575px, 95vw);
+  height: 215px;
+  background: var(--link-color-dark);
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+.section#talk .content-wrap h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.section#talk .content-wrap .button {
+  background: #4acc97;
+  color: #fff;
+  padding: 15px 25px;
+}
+.section#talk .content-wrap .button:hover {
+  background: #5ee1ac;
+}
+.section#talk .social-links-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.section#talk .social-links-wrap a.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 12px 10px;
+  margin: 8px;
+  border-radius: 6px;
+}
+.section#talk .social-links-wrap a.item:hover {
+  background: #363636;
+}
+.section#talk .social-links-wrap a.item img.icon {
+  margin-right: 8px;
+  width: 20px;
+  height: auto;
+}
+.section#talk .social-links-wrap a.item .text {
+  color: #fff;
+}
+
+[data-theme=dark] .section#talk .content-wrap .button {
+  background: #340098;
+}
+[data-theme=dark] .section#talk .content-wrap .button:hover {
+  background: #4814ac;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -253,8 +253,8 @@
         <div class="links-wrap"> <a href="#about">About Me</a>
           <div class="vertical-divider"></div><a href="#experience">Experience & Education</a>
           <div class="vertical-divider"></div><a href="#skills">Skills</a>
-          <div class="vertical-divider"></div><a href="#mywork">My Work</a>
-          <div class="vertical-divider"></div><a href="#contact">Contact</a>
+          <div class="vertical-divider"></div><a href="#my-work">My Work</a>
+          <div class="vertical-divider"></div><a href="#talk">Contact</a>
         </div>
       </div>
       <div id="about-me" data-section="about" data-section-name="About Me" class="section top-section">
@@ -484,6 +484,7 @@
               <div data-priority="2" data-professional="personal" data-type="programming" class="item">C++</div>
               <div data-priority="2" data-professional="professional personal" data-type="back-end programming" class="item">C#</div>
               <div data-priority="3" data-professional="personal" data-type="programming" class="item">Python</div>
+              <div data-priority="2" data-professional="professional personal" data-type="front-end back-end" class="item">React</div>
               <div data-priority="2" data-professional="personal" data-type="programming" class="item">Java</div>
               <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">MVC</div>
               <div data-priority="2" data-professional="professional" data-type="front-end back-end" class="item">Sitefinity</div>
@@ -522,16 +523,17 @@
           </div>
         </div>
       </div>
+      <div style="--filler-height: 200px;" class="section filler"></div>
       <div id="talk" data-section-name="Talk" class="section top-section">
-        <div class="background-wrap">
-          <div class="background-colors dark"> </div>
-          <div class="background-colors light"></div>
-        </div>
         <div class="content-wrap">
-          <h1>Talk?</h1>
+          <h2>Want to Talk?</h2>
+          <div class="button">Send a Message</div>
         </div>
-      </div>
-      <div style="--filler-height: 500px;" class="section filler"></div><div class="theme-switch-wrap">
+        <div class="social-links-wrap"> <a href="https://github.com/MattHaslemTech" target="_blank" class="item"><img src="_pics/icons/github_small.svg" class="icon"/>
+            <div class="text">GitHub</div></a><a href="https://www.linkedin.com/in/thematthaslem/" target="_blank" class="item"><img src="_pics/icons/linkedin_small.svg" class="icon"/>
+            <div class="text">LinkedIn</div></a><a href="mailto:matt@matthaslem.tech" class="item"><img src="_pics/icons/email_small.svg" class="icon"/>
+            <div class="text">Email</div></a></div>
+      </div><div class="theme-switch-wrap">
   <div class="inner-content">
     <div class="color-wrap">
       <div class="theme-light"></div>

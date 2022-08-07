@@ -1,0 +1,66 @@
+.section#talk
+  transform: translateY(-10px)
+  padding-top: 200px
+  padding-bottom: 40px
+  position: relative
+  background: rgba(84,84,84,1)
+
+
+  .content-wrap
+    @include flex(column, center, center, nowrap)
+    @include transition(400ms)
+    width: min(575px, 95vw)
+    height: 215px
+    background: var(--link-color-dark)
+
+    position: absolute
+    z-index: 1
+    left: 50%
+    top: 0
+
+    transform: translate(-50%, -50%)
+
+    border-radius: 4px
+
+    h2
+      color: #fff
+      margin-bottom: 20px
+
+    .button
+      background: rgba(74,204,151,1)
+      color: #fff
+      padding: 15px 25px
+
+      &:hover
+        background: rgba(94,225,172, 1)
+
+
+  .social-links-wrap
+    @include flex(row, center, center, nowrap)
+    width: 100%
+
+    a.item
+      @include flex(row, center, flex-start, nowrap)
+      padding: 12px 10px
+      margin: 8px
+      border-radius: 6px
+
+      &:hover
+        background: rgba(54,54,54,1)
+
+      img.icon
+        margin-right: 8px
+        width: 20px
+        height: auto
+
+      .text
+        color: #fff
+
+
+[data-theme=dark] .section#talk
+  .content-wrap
+    .button
+      background: rgba(52,0,152,1)
+
+      &:hover
+        background: rgba(72, 20, 172, 1)

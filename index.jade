@@ -203,7 +203,7 @@ html(lang="en" dir="ltr")
               .item(data-priority="3" data-professional="personal" data-type="programming") Python
               .item(data-priority="2" data-professional="personal" data-type="programming") Java
               .item(data-priority="3" data-professional="professional" data-type="front-end back-end") MVC
-              .item(data-priority="3" data-professional="professional" data-type="front-end back-end") Sitefinity
+              .item(data-priority="2" data-professional="professional" data-type="front-end back-end") Sitefinity
               .item(data-priority="2" data-professional="professional personal" data-type="front-end back-end") Wordpress
               
             .word-cloud-wrap(filter="false")
@@ -225,10 +225,12 @@ html(lang="en" dir="ltr")
             //include _pics/my-work/my-work-border-bottom-dark.svg
             //include _pics/my-work/my-work-border-bottom-light.svg 
         .content-wrap
-          h2 My Work
-          .slideshow
-            .slide
-              .item.category MAXX Potential (Professional) >
+          h1 My Work
+          .slideshow#maxx-projects
+            .slide(data-opened="true")
+              .item.category 
+                h3 MAXX Potential Projects 
+                  img.icon.open-arrow.desktop-hide(src="_pics/arrow-down-dark.svg")
               .item  
                 img(src="_pics/my-work/give.png")
               .item 
@@ -242,6 +244,13 @@ html(lang="en" dir="ltr")
               .item 
                 img(src="_pics/my-work/chalk.png")
               
+      .section#talk.top-section(data-section-name="Talk")
+        .background-wrap
+          .background-colors.dark 
+          .background-colors.light
+        .content-wrap
+          h1 Talk?
+        
       .section.filler(style="--filler-height: 500px;")
       include _includes/_items/theme-switch.php 
       include _includes/_items/section-navigator  

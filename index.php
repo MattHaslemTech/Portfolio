@@ -486,7 +486,7 @@
               <div data-priority="3" data-professional="personal" data-type="programming" class="item">Python</div>
               <div data-priority="2" data-professional="personal" data-type="programming" class="item">Java</div>
               <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">MVC</div>
-              <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">Sitefinity</div>
+              <div data-priority="2" data-professional="professional" data-type="front-end back-end" class="item">Sitefinity</div>
               <div data-priority="2" data-professional="professional personal" data-type="front-end back-end" class="item">Wordpress</div>
             </div>
             <div filter="false" class="word-cloud-wrap"></div>
@@ -506,10 +506,12 @@
           </div>
         </div>
         <div class="content-wrap">
-          <h2>My Work</h2>
-          <div class="slideshow">
-            <div class="slide">
-              <div class="item category">MAXX Potential (Professional) ></div>
+          <h1>My Work</h1>
+          <div id="maxx-projects" class="slideshow">
+            <div data-opened="true" class="slide">
+              <div class="item category"> 
+                <h3>MAXX Potential Projects <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
+              </div>
               <div class="item"> <img src="_pics/my-work/give.png"/></div>
               <div class="item"> <img src="_pics/my-work/broadtime.png"/></div>
               <div class="item"> <img src="_pics/my-work/nsrec.png"/></div>
@@ -518,6 +520,15 @@
               <div class="item"> <img src="_pics/my-work/chalk.png"/></div>
             </div>
           </div>
+        </div>
+      </div>
+      <div id="talk" data-section-name="Talk" class="section top-section">
+        <div class="background-wrap">
+          <div class="background-colors dark"> </div>
+          <div class="background-colors light"></div>
+        </div>
+        <div class="content-wrap">
+          <h1>Talk?</h1>
         </div>
       </div>
       <div style="--filler-height: 500px;" class="section filler"></div><div class="theme-switch-wrap">

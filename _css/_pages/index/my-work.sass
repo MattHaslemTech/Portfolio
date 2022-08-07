@@ -1,5 +1,5 @@
 .section#my-work
-  height: 500px
+  height: 550px
   position: relative
   transform: translateY(-10px)
 
@@ -17,8 +17,9 @@
     @include flex(column, center, center, nowrap)
     padding: 80px 0px
 
-    h2
+    h1
       margin-bottom: 20px
+      font-size: 36px
 
     .slideshow
       width: 100%
@@ -28,22 +29,77 @@
         grid-template-columns: 1fr 2fr 2fr 2fr
         grid-template-rows: 1fr 1fr
         width: 100%
+        max-height: none
+        @include transition(500ms)
+
 
         .item
           //overflow: hidden
           border: #ccc
+          @include transition(200ms)
 
           &.category
-            background: red
+            background: #BB2025
+            @include flex(column, flex-end, flex-end, nowrap)
+
+            h3
+              color: #fff
+              text-align: right
+              padding: 0px 10px 10px 0px
 
           &:not(.category)
             cursor: pointer
             max-height: 160px
 
+            &:hover
+              transform: scale(1.1)
+
           &.category
             grid-row: 1 / 3
 
-          img
+
+
+          img:not(.icon)
             width: 101%
             height: 101%
             //object-fit: cover
+
+
+@media only screen and (max-width: 786px)
+  .section#my-work
+    height: auto
+
+    .content-wrap
+
+      h1
+        font-size: 50px
+        margin-bottom: 30px
+
+      .slideshow
+
+        .slide
+          display: flex
+          flex-direction: column
+
+          &[data-opened="false"]
+            max-height: 75px
+            overflow: hidden
+
+          .item
+            margin-bottom: 15px
+
+            &:not(.category)
+              max-height: none
+
+            &.category
+              @include flex(row, flex-start, flex-start, nowrap)
+              font-size: 20px
+              background: none
+              margin-bottom: 20px
+              padding-bottom: 20px
+              border-bottom: 2px var(--heading-color) solid
+
+              h3
+                color: var(--heading-color)
+                padding: 0px
+                font-size: 36px

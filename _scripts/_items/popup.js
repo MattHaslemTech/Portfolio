@@ -3,11 +3,7 @@ $('[data-open-popup]').on('click', function(){
     var popupName = $(this).attr('data-open-popup');
     var targetPopup = $('.full-popup-wrap[data-popup-name="' + popupName + '"]');
 
-    console.log("Popup : " + popupName);
-
     targetPopup.addClass('open');
-
-    console.log("Class : " + targetPopup.attr('class'));
 });
 
 

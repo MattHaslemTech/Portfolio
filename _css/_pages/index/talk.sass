@@ -58,6 +58,16 @@
       .text
         color: #fff
 
+  .contact-info
+    @include flex(column, center, flex-start, nowrap)
+    color: #fff
+    margin-bottom: 20px
+
+    h3
+      color: #fff
+    *
+      margin-bottom: 5px
+
 
 [data-theme=dark] .section#talk
   .content-wrap
@@ -66,3 +76,12 @@
 
       &:hover
         background: rgba(72, 20, 172, 1)
+
+
+@media only screen and (max-width: 786px)
+  .section#talk
+    .contact-info
+      font-size: 1.3rem
+
+      h3
+        font-size: 2rem

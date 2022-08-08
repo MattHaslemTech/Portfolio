@@ -511,11 +511,11 @@
           <div id="maxx-projects" class="slideshow">
             <div data-opened="true" class="slide">
               <div class="item category"> 
-                <h3>MAXX Potential Projects <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
+                <h3>MAXX Potential Projects   <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
               </div>
-              <div class="item"> <img src="_pics/my-work/give.png"/></div>
-              <div class="item"> <img src="_pics/my-work/broadtime.png"/></div>
-              <div class="item"> <img src="_pics/my-work/nsrec.png"/></div>
+              <div class="item">  <img src="_pics/my-work/give.png"/></div>
+              <div class="item">   <img src="_pics/my-work/broadtime.png"/></div>
+              <div class="item">  <img src="_pics/my-work/nsrec.png"/></div>
               <div class="item"><img src="_pics/my-work/macys.png"/></div>
               <div class="item"> <img src="_pics/my-work/connectva.png"/></div>
               <div class="item"> <img src="_pics/my-work/chalk.png"/></div>
@@ -528,6 +528,9 @@
         <div class="content-wrap">
           <h2>Want to Talk?</h2>
           <div data-open-popup="contact" class="button">Send a Message</div>
+        </div>
+        <div class="contact-info">
+          <h3 class="name">Matthew Haslem                </h3><a href="mailto:matt@matthaslem.tech" class="email">matt@matthaslem.tech</a><a href="tel:757-660-2112" class="phone">757-660-2112</a><span class="location">Norfolk, VA </span>
         </div>
         <div class="social-links-wrap"> <a href="https://github.com/MattHaslemTech" target="_blank" class="item"><img src="_pics/icons/github_small.svg" class="icon"/>
             <div class="text">GitHub</div></a><a href="https://www.linkedin.com/in/thematthaslem/" target="_blank" class="item"><img src="_pics/icons/linkedin_small.svg" class="icon"/>
@@ -558,7 +561,64 @@
           <div class="text">Close</div>
         </div>
         <div class="content-wrap">
-          <h1>POPUPS</h1>
+          <h2 class="main-title">Send a Message </h2>
+          <form class="form-wrap">
+            <div class="row">
+              <div class="item"> 
+                <div class="row label-text">
+                  <div class="line"></div>
+                  <label for="name" class="input-label">Name </label>
+                  <div class="line"> </div>
+                </div>
+                <input type="text" name="name" required="required"/>
+              </div>
+              <div class="item">
+                <div class="row label-text">
+                  <div class="line"></div>
+                  <label for="email" class="input-label">Email </label>
+                  <div class="line"></div>
+                </div>
+                <input type="email" name="email" required="required"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="item">
+                <div class="row label-text">
+                  <div class="line"></div>
+                  <label for="phone" class="input-label">Phone </label>
+                  <div class="line"></div>
+                </div>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="required"/>
+              </div>
+              <div class="item">
+                <div class="row label-text">
+                  <div class="line"></div>
+                  <label for="email" class="input-label">Preferred Contact </label>
+                  <div class="line"></div>
+                </div>
+                <div class="row preferred-contact">
+                  <input type="radio" id="contact-email" name="contact-method" value="email"/>
+                  <label for="contact-email">E-Mail </label>
+                  <input type="radio" id="contact-phone" name="contact-method" value="phone"/>
+                  <label for="contact-phone">Phone </label>
+                </div>
+              </div>
+            </div>
+            <div class="row text-box-wrap">
+              <div class="item">
+                <div class="row label-text">
+                  <div class="line"></div>
+                  <label for="phone" class="input-label">Message</label>
+                  <div class="line"></div>
+                </div>
+                <textarea name="text"></textarea>
+              </div>
+            </div>
+            <div class="row bottom-buttons">
+              <input type="submit" value="Send" class="button"/>
+              <div class="button close-popup cancel">Cancel</div>
+            </div>
+          </form>
         </div>
         <div class="overlay"></div>
       </div>

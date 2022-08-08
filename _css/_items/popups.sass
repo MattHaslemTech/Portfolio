@@ -10,16 +10,14 @@
 
   overflow: hidden
 
-  & *
-    display: none
+  & > *
+    max-height: 0px
+    overflow: hidden
 
-  .close-popup
+  & > .close-popup
     position: fixed
     right: 30px
     top: 20px
-
-
-    padding: 15px
 
     border-radius: 4px
 
@@ -39,14 +37,14 @@
       color: #fff
 
   .overlay
-    transition: opacity 3s linear
+    transition: opacity 300ms linear
 
     position: fixed
     top: 0
     left: 0
     z-index: -1
 
-    background: rgba(30,30,30,0.4)
+    background: rgba(30,30,30,0.8)
 
     opacity: 0
 
@@ -56,24 +54,37 @@
 
   .content-wrap
     @include flex(column, center, center, nowrap)
+    transition: transform 300ms linear
+
     background: var(--body-background-color)
     padding: 20px
 
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px
+
+    width: min(800px, 95vw)
+
+    transform: rotateX(90deg)
+
+    h2.main-title
+      margin-bottom: 20px
 
 
   &.open
     max-height: 100vh
     height: 100vh
 
-    & *
-      display: flex
-
-    .close-popup
+    & > .close-popup
       @include flex(row, center, flex-end, nowrap)
+
+      padding: 15px
 
     .overlay
       max-height: 100vh
       height: 100vh
 
       opacity: 1
+
+    .content-wrap
+      transform: rotateX(0deg)
+      max-height: 90vh
+      padding: 30px

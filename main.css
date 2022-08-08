@@ -364,36 +364,36 @@ img.border[data-animate=true] {
   height: 0px;
   overflow: hidden;
 }
-.full-popup-wrap * {
-  display: none;
+.full-popup-wrap > * {
+  max-height: 0px;
+  overflow: hidden;
 }
-.full-popup-wrap .close-popup {
+.full-popup-wrap > .close-popup {
   position: fixed;
   right: 30px;
   top: 20px;
-  padding: 15px;
   border-radius: 4px;
   z-index: 99;
 }
-.full-popup-wrap .close-popup:hover {
+.full-popup-wrap > .close-popup:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.4);
 }
-.full-popup-wrap .close-popup img {
+.full-popup-wrap > .close-popup img {
   width: 10px;
   height: 10px;
   margin-right: 10px;
 }
-.full-popup-wrap .close-popup .text {
+.full-popup-wrap > .close-popup .text {
   color: #fff;
 }
 .full-popup-wrap .overlay {
-  transition: opacity 3s linear;
+  transition: opacity 300ms linear;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  background: rgba(30, 30, 30, 0.4);
+  background: rgba(30, 30, 30, 0.8);
   opacity: 0;
   width: 100vw;
   max-height: 0px;
@@ -405,28 +405,37 @@ img.border[data-animate=true] {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  transition: transform 300ms linear;
   background: var(--body-background-color);
   padding: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: min(800px, 95vw);
+  transform: rotateX(90deg);
+}
+.full-popup-wrap .content-wrap h2.main-title {
+  margin-bottom: 20px;
 }
 .full-popup-wrap.open {
   max-height: 100vh;
   height: 100vh;
 }
-.full-popup-wrap.open * {
-  display: flex;
-}
-.full-popup-wrap.open .close-popup {
+.full-popup-wrap.open > .close-popup {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
+  padding: 15px;
 }
 .full-popup-wrap.open .overlay {
   max-height: 100vh;
   height: 100vh;
   opacity: 1;
+}
+.full-popup-wrap.open .content-wrap {
+  transform: rotateX(0deg);
+  max-height: 90vh;
+  padding: 30px;
 }
 
 .page-wrap.home {
@@ -1216,12 +1225,184 @@ img.border[data-animate=true] {
 .section#talk .social-links-wrap a.item .text {
   color: #fff;
 }
+.section#talk .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.section#talk .contact-info h3 {
+  color: #fff;
+}
+.section#talk .contact-info * {
+  margin-bottom: 5px;
+}
 
 [data-theme=dark] .section#talk .content-wrap .button {
   background: #340098;
 }
 [data-theme=dark] .section#talk .content-wrap .button:hover {
   background: #4814ac;
+}
+
+@media only screen and (max-width: 786px) {
+  .section#talk .contact-info {
+    font-size: 1.3rem;
+  }
+  .section#talk .contact-info h3 {
+    font-size: 2rem;
+  }
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 45px;
+  box-sizing: border-box;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row > *:not(:last-child) {
+  margin-right: 20px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.label-text {
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80%;
+  justify-content: flex-start;
+  opacity: 0.8;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.label-text > *:not(:last-child) {
+  margin-right: 10px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.label-text label {
+  white-space: nowrap;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.label-text .line {
+  width: 100%;
+  border-top: 1px var(--text-color) solid;
+  max-width: 120px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap {
+  width: 100%;
+  margin-top: 20px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap .item {
+  width: 100%;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap .item .row.label-text {
+  margin-bottom: 15px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap .item .row.label-text .line {
+  max-width: none;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap .item .row.label-text .line:first-child {
+  min-width: unset;
+  width: 100%;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.preferred-contact {
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.preferred-contact input {
+  margin-right: 5px;
+  margin-top: 0px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.bottom-buttons {
+  justify-content: center;
+  margin-bottom: 0px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.bottom-buttons input {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: Calibri;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.bottom-buttons .button {
+  padding: 15px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.bottom-buttons .button.cancel {
+  background: none;
+  color: var(--link-color-dark);
+  border: 1px var(--link-color-dark) solid;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row.bottom-buttons .button.cancel:hover {
+  opacity: 0.6;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 45%;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item:not(:last-child) {
+  margin-right: 20px;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item input[type=text],
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item input[type=email],
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item input[type=tel],
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item textarea {
+  width: 100%;
+  padding: 8px;
+  color: var(--text-color);
+  font-size: 16px;
+  border: 1px var(--text-color) solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Calibri;
+}
+.full-popup-wrap[data-popup-name=contact] .form-wrap .row .item textarea {
+  height: 130px;
+}
+
+@media only screen and (max-width: 786px) {
+  .full-popup-wrap[data-popup-name=contact] .form-wrap {
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row.bottom-buttons {
+    flex-direction: row;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row.text-box-wrap {
+    margin-top: 0px;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row .item {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row .item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row .item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap > .row .item * {
+    width: 100%;
+  }
+  .full-popup-wrap[data-popup-name=contact] .form-wrap .row.label-text label {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

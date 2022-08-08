@@ -1,0 +1,139 @@
+.full-popup-wrap[data-popup-name="contact"]
+  .form-wrap
+    @include flex(column, flex-start, center, nowrap)
+    width: 100%
+    padding: 45px
+    box-sizing: border-box
+
+    .row
+      @include flex(row, center, space-between, nowrap)
+      width: 100%
+      margin-bottom: 20px
+
+      & > *:not(:last-child)
+        margin-right: 20px
+
+      &.label-text
+        margin-bottom: 10px
+        margin-right: auto
+        margin-left: auto
+        max-width: 80%
+        justify-content: flex-start
+        opacity: 0.8
+
+        & > *:not(:last-child)
+          margin-right: 10px
+
+        label
+          white-space: nowrap
+
+        .line
+          width: 100%
+          border-top: 1px var(--text-color) solid
+          max-width: 120px
+
+
+      &.text-box-wrap
+        width: 100%
+        margin-top: 20px
+
+        .item
+          width: 100%
+
+          .row.label-text
+            margin-bottom: 15px
+
+            .line
+              max-width: none
+
+              &:first-child
+                min-width: unset
+                width: 100%
+
+      &.preferred-contact
+        justify-content: center
+        margin-bottom: 0px
+
+        input
+          margin-right: 5px
+          margin-top: 0px
+
+      &.bottom-buttons
+        justify-content: center
+        margin-bottom: 0px
+
+        input
+          border: none
+          outline: none
+          color: #fff
+          font-size: 16px
+          font-family: Calibri
+
+        .button
+          padding: 15px
+
+          &.cancel
+            background: none
+            color: var(--link-color-dark)
+            border: 1px var(--link-color-dark) solid
+
+            &:hover
+              opacity: 0.6
+
+      .item
+        @include flex(column, flex-start, flex-start, nowrap)
+        width: 45%
+
+        &:not(:last-child)
+          margin-right: 20px
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea
+          width: 100%
+          padding: 8px
+          color: var(--text-color)
+          font-size: 16px
+          border: 1px var(--text-color) solid
+          box-sizing: border-box
+          border-radius: 4px
+          font-family: Calibri
+
+        textarea
+          height: 130px
+
+
+@media only screen and (max-width: 786px)
+  .full-popup-wrap[data-popup-name="contact"]
+    .form-wrap
+      justify-content: flex-start
+      padding: 0px
+
+      & > .row
+        flex-direction: column
+        margin-bottom: 25px
+
+        &.bottom-buttons
+          flex-direction: row
+
+        &.text-box-wrap
+          margin-top: 0px
+
+        .item
+          margin-right: 0px
+          width: 100%
+
+          &:not(:last-child)
+            margin-bottom: 25px
+
+          &:not(:last-child)
+            margin-right: 0px
+
+          *
+            width: 100%
+
+      .row
+        &.label-text
+          label
+            width: auto

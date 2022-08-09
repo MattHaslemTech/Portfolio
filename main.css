@@ -1189,6 +1189,29 @@ img.border[data-animate=true] {
   opacity: 0;
 }
 
+@media only screen and (max-width: 786px) {
+  .section#skills .content-wrap {
+    flex-direction: column;
+  }
+  .section#skills .right-side {
+    max-width: 95vw;
+    width: 95vw;
+  }
+  .section#skills .left-side {
+    max-width: 80vw;
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+  .section#skills .left-side .filters-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section#skills .left-side .filters-wrap {
+    display: block;
+  }
+}
 .section#my-work {
   height: 550px;
   position: relative;

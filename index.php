@@ -460,12 +460,12 @@
                     <div class="checkbox"></div>Programming
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" value="design" class="skill-filter"/>
-                    <div class="checkbox"></div>Design
-                  </label>
-                </li>
+                <!--li
+                label
+                  input.skill-filter(type="checkbox" value="design")
+                  .checkbox
+                  | Design
+                -->
               </ul>
             </div>
             <div class="button clear-skill-filters">Clear            </div>

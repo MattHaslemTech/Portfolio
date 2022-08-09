@@ -105,3 +105,29 @@
       .border
         svg.light-border
           opacity: 0
+
+
+@media only screen and (max-width: 786px)
+  .section#skills
+    .content-wrap
+      flex-direction: column
+
+    .right-side
+      max-width: 95vw
+      width: 95vw
+
+    .left-side
+      max-width: 80vw
+      width: 80vw
+      margin-bottom: 20px
+
+      .filters-wrap
+        display: flex
+        justify-content: space-between
+
+
+@media only screen and (max-width: 600px)
+  .section#skills
+    .left-side
+      .filters-wrap
+        display: block

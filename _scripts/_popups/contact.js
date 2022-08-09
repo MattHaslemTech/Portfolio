@@ -74,6 +74,9 @@ $('#contact-form').on('submit', function(e){
   // Save the alert to show once the contact-wrap is closed
   let alertWrap = $('.message-alert-wrap.message-sent');
 
+  // Show the loader
+  let loader = $(this).find('.loader');
+  loader.show(200);
 
   console.log('Data: ' + $(this).serialize());
 
@@ -92,11 +95,12 @@ $('#contact-form').on('submit', function(e){
         alertWrap.removeClass('show');
         contactWrap.removeClass('close');
         $('.full-popup-wrap.open').removeClass('open');
+        loader.hide();
 
         // Reset the form.. I don't know why they'd send consecutive messages but this seems like something we should do...
         // .... In fact, I feel like the only reason they'd send consecutive messages is because they messed up the first one..
         // ...... In that case, I figure they'd want their info to still be there...
-        // .. resetting seems way more standard though. Let's just stick with that. 
+        // .. resetting seems way more standard though. Let's just stick with that.
         document.getElementById('contact-form').reset();
       },1650);
     }

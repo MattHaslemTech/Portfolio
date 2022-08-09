@@ -615,6 +615,7 @@
               </div>
             </div>
             <div class="row bottom-buttons">
+              <div class="loader"></div>
               <input type="submit" value="Send" class="button"/>
               <div class="button close-popup cancel">Cancel</div>
             </div>

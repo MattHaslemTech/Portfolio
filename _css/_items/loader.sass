@@ -1,0 +1,63 @@
+.loader
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  display: none
+  position: relative
+  border: 3px solid
+  border-color: #1ab1a4 #1ab1a4 transparent transparent
+  box-sizing: border-box
+  animation: rotation 1s linear infinite
+
+  &.show
+    display: inline-block
+
+.loader::after,
+.loader::before
+  content: ''
+  box-sizing: border-box
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  margin: auto
+  border: 3px solid
+  border-color: transparent transparent #1ab1a4 #1ab1a4
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  box-sizing: border-box
+  animation: rotationBack 0.5s linear infinite
+  transform-origin: center center
+  opacity: 0.6
+
+.loader::before
+  width: 32px
+  height: 32px
+  border-color: #1ab1a4 #1ab1a4 transparent transparent
+  animation: rotation 1.5s linear infinite
+  opacity: 0.8
+
+
+@keyframes rotation
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+
+@keyframes rotationBack
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(-360deg)
+
+
+
+[data-theme=dark]
+  .loader::after,
+  .loader::before
+      border-color: transparent transparent #8B37B7 #8B37B7

@@ -68,17 +68,13 @@ $('#contact-form').on('submit', function(e){
   // Stop the form from changing pages
   e.preventDefault();
 
-  // Gather form data
-  /*
-  var inputData = {
-    name: $(this).find('input[name="name"]').val(),
-    email: $(this).find('input[name="email"]').val(),
-    phone: $(this).find('input[name="phone"]').val(),
-    preferred_contact: $(this).find('input[name="contact-method"]').val(),
-    message: $(this).find('textarea[name="text"]').val()
-  }
-  */
-  //console.log('Data: ' + inputData);
+  // Save contact form contact-wrap so we can use it in ajax
+  let contactWrap = $(this).closest('.content-wrap');
+
+  // Save the alert to show once the contact-wrap is closed
+  let alertWrap = $('.message-alert-wrap.message-sent');
+
+
   console.log('Data: ' + $(this).serialize());
 
   // Submit form
@@ -88,6 +84,21 @@ $('#contact-form').on('submit', function(e){
     data: $(this).serialize(),
     success: function(res){
       console.log('res: ' + res);
+
+      contactWrap.addClass('close');
+      alertWrap.addClass('show');
+
+      setTimeout(function(){
+        alertWrap.removeClass('show');
+        contactWrap.removeClass('close');
+        $('.full-popup-wrap.open').removeClass('open');
+
+        // Reset the form.. I don't know why they'd send consecutive messages but this seems like something we should do...
+        // .... In fact, I feel like the only reason they'd send consecutive messages is because they messed up the first one..
+        // ...... In that case, I figure they'd want their info to still be there...
+        // .. resetting seems way more standard though. Let's just stick with that. 
+        document.getElementById('contact-form').reset();
+      },1650);
     }
   })
 

@@ -622,6 +622,11 @@
         </div>
         <div class="overlay"></div>
       </div>
+      <div class="message-alert-wrap message-sent">
+        <div class="content"><img src="_pics/icons/check.svg"/>
+          <h3 class="message">Message Sent</h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>

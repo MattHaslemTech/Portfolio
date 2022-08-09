@@ -475,17 +475,15 @@ $('#contact-form').on('submit', function(e){
   // Stop the form from changing pages
   e.preventDefault();
 
-  // Gather form data
-  /*
-  var inputData = {
-    name: $(this).find('input[name="name"]').val(),
-    email: $(this).find('input[name="email"]').val(),
-    phone: $(this).find('input[name="phone"]').val(),
-    preferred_contact: $(this).find('input[name="contact-method"]').val(),
-    message: $(this).find('textarea[name="text"]').val()
-  }
-  */
-  //console.log('Data: ' + inputData);
+  // Save contact form contact-wrap so we can use it in ajax
+  let contactWrap = $(this).closest('.content-wrap');
+
+  // Save the alert to show once the contact-wrap is closed
+  let alertWrap = $('.message-alert-wrap.message-sent');
+
+  // Save the form so we can reset it
+  let contactForm = $(this);
+
   console.log('Data: ' + $(this).serialize());
 
   // Submit form
@@ -495,6 +493,17 @@ $('#contact-form').on('submit', function(e){
     data: $(this).serialize(),
     success: function(res){
       console.log('res: ' + res);
+
+      contactWrap.addClass('close');
+      alertWrap.addClass('show');
+
+      setTimeout(function(){
+        alertWrap.removeClass('show');
+        contactWrap.removeClass('close');
+        $('.full-popup-wrap.open').removeClass('open');
+        console.log('sweet');
+        document.getElementById('contact-form').reset();
+      },1650);
     }
   })
 

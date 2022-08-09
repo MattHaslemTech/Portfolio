@@ -22,9 +22,5 @@
   {
     echo "Message sent. ";
   }
-  else
-  {
-    echo "shite";
-  }
 
   echo $content;

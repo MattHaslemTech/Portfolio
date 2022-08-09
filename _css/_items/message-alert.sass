@@ -1,0 +1,64 @@
+.message-alert-wrap
+  @include flex(column, center, center, nowrap)
+
+  position: fixed
+  top: 50%
+  left: 50%
+
+  padding: 40px
+
+  background: var(--link-color-dark)
+
+  border-radius: 4px
+
+  transform: translate(-50%, -50%) rotateY(-90deg)
+
+  // animation: open-alert 2s infinite
+
+  &.show
+    animation: open-alert 1.5s linear 150ms
+
+  .content
+    @include flex(column, center, center, nowrap)
+
+    img
+      width: 80px
+      margin-bottom: 15px
+
+  h3
+    color: #fff
+
+
+@media only screen and (max-width: 786px)
+  .message-alert-wrap
+    width: 70vw
+    height: 70vw
+
+    .content
+      img
+        width: 80px
+        margin-bottom: 15px
+
+    h3
+      color: #fff
+
+
+@keyframes open-alert
+  0%
+    transform: translate(-50%, -50%) rotateY(-90deg)
+    opacity: 1
+  15%
+    transform: translate(-50%, -50%) rotateY(0deg)
+    opacity: 1
+  80%
+    transform: translate(-50%, -50%) rotateY(0deg)
+    opacity: 1
+  85%
+    transform: translate(-50%, -50%) rotateY(0deg)
+    opacity: 1
+  95%
+    transform: translate(-50%, -70%) rotateY(0deg)
+    opacity: 1
+  100%
+    transform: translate(-50%, -40%) rotateY(-90deg)
+    opacity: 0

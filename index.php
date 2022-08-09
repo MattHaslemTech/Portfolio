@@ -515,8 +515,8 @@
               </div>
               <div class="item">  <img src="_pics/my-work/give.png"/></div>
               <div class="item">   <img src="_pics/my-work/broadtime.png"/></div>
-              <div class="item">  <img src="_pics/my-work/nsrec.png"/></div>
-              <div class="item"><img src="_pics/my-work/macys.png"/></div>
+              <div class="item">    <img src="_pics/my-work/nsrec.png"/></div>
+              <div class="item"> <img src="_pics/my-work/macys.png"/></div>
               <div class="item"> <img src="_pics/my-work/connectva.png"/></div>
               <div class="item"> <img src="_pics/my-work/chalk.png"/></div>
             </div>
@@ -562,7 +562,7 @@
         </div>
         <div class="content-wrap">
           <h2 class="main-title">Send a Message </h2>
-          <form class="form-wrap">
+          <form id="contact-form" method="POST" class="form-wrap">
             <div class="row">
               <div class="item"> 
                 <div class="row label-text">
@@ -588,12 +588,12 @@
                   <label for="phone" class="input-label">Phone </label>
                   <div class="line"></div>
                 </div>
-                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="required"/>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"/>
               </div>
               <div class="item">
                 <div class="row label-text">
                   <div class="line"></div>
-                  <label for="email" class="input-label">Preferred Contact </label>
+                  <label for="contact-method" class="input-label">Preferred Contact </label>
                   <div class="line"></div>
                 </div>
                 <div class="row preferred-contact">
@@ -611,7 +611,7 @@
                   <label for="phone" class="input-label">Message</label>
                   <div class="line"></div>
                 </div>
-                <textarea name="text"></textarea>
+                <textarea name="message" required="required"></textarea>
               </div>
             </div>
             <div class="row bottom-buttons">

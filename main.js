@@ -465,4 +465,38 @@ $('input[name="phone"]').on('input', function(){
   }
 
 });
+
+
+/*
+ * Let's do the ajax stuff to send the email
+ */
+$('#contact-form').on('submit', function(e){
+
+  // Stop the form from changing pages
+  e.preventDefault();
+
+  // Gather form data
+  /*
+  var inputData = {
+    name: $(this).find('input[name="name"]').val(),
+    email: $(this).find('input[name="email"]').val(),
+    phone: $(this).find('input[name="phone"]').val(),
+    preferred_contact: $(this).find('input[name="contact-method"]').val(),
+    message: $(this).find('textarea[name="text"]').val()
+  }
+  */
+  //console.log('Data: ' + inputData);
+  console.log('Data: ' + $(this).serialize());
+
+  // Submit form
+  $.ajax({
+    type: "POST",
+    url: "_php/submit-contact.php",
+    data: $(this).serialize(),
+    success: function(res){
+      console.log('res: ' + res);
+    }
+  })
+
+});
 });                                     

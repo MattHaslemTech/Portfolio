@@ -4,7 +4,7 @@
     .text Close
   .content-wrap
     h2.main-title Send a Message 
-    form.form-wrap
+    form.form-wrap#contact-form(method="POST")
       .row
         .item 
           .row.label-text
@@ -25,11 +25,11 @@
             .line
             label.input-label(for="phone") Phone 
             .line
-          input(type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required)
+          input(type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required)
         .item
           .row.label-text
             .line
-            label.input-label(for="email") Preferred Contact 
+            label.input-label(for="contact-method") Preferred Contact 
             .line
           .row.preferred-contact
             input(type="radio" id="contact-email" name="contact-method" value="email")
@@ -42,7 +42,7 @@
             .line
             label.input-label(for="phone") Message
             .line
-          textarea(name="text")
+          textarea(name="message" required)
           
       .row.bottom-buttons
         input.button(type="submit" value="Send")

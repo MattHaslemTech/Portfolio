@@ -1156,7 +1156,7 @@ img.border[data-animate=true] {
   .section#my-work .content-wrap .slideshow .slide .item.category h3 {
     color: var(--heading-color);
     padding: 0px;
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .section#talk {
@@ -1263,7 +1263,7 @@ img.border[data-animate=true] {
   justify-content: center;
   flex-wrap: nowrap;
   width: 100%;
-  padding: 45px;
+  padding: 10px 45px;
   box-sizing: border-box;
 }
 .full-popup-wrap[data-popup-name=contact] .form-wrap .row {
@@ -1296,6 +1296,7 @@ img.border[data-animate=true] {
   width: 100%;
   border-top: 1px var(--text-color) solid;
   max-width: 120px;
+  transform: translateY(3px);
 }
 .full-popup-wrap[data-popup-name=contact] .form-wrap .row.text-box-wrap {
   width: 100%;

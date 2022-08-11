@@ -107,6 +107,7 @@ html(lang="en" dir="ltr")
                     em ( July 2021 - Present )
               .desc
                 |  MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. 
+                a(href="https://maxxpotential.com/" target="_blank") Learn More
               .button-wrap
                 a.button(data-scroll-to="maxx-projects")
                   | Projects 
@@ -232,11 +233,11 @@ html(lang="en" dir="ltr")
               .item.category 
                 h3 MAXX Potential Projects   
                   img.icon.open-arrow.desktop-hide(src="_pics/arrow-down-dark.svg")
-              .item   
-                img(src="_pics/my-work/give.png")  
-              .item    
-                img(src="_pics/my-work/broadtime.png")  
-              .item     
+              .item(data-open-popup="give")      
+                img(src="_pics/my-work/give.png")    
+              .item       
+                img(src="_pics/my-work/broadtime.png")   
+              .item      
                 img(src="_pics/my-work/nsrec.png")
               .item  
                 img(src="_pics/my-work/macys.png")
@@ -272,6 +273,7 @@ html(lang="en" dir="ltr")
       include _includes/_items/mobile-nav  
       
       include _includes/_popups/contact   
+      include _includes/_popups/work/give   
       
       include _includes/_alerts/message-sent   
      

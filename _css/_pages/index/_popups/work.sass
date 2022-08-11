@@ -1,0 +1,74 @@
+.full-popup-wrap.work
+  .content-wrap
+    @include flex(row, flex-start, center, nowrap)
+    position: relative
+    width: min(1000px, 95vw)
+    overflow: auto
+
+    .line
+      margin-top: 10px
+      margin-bottom: 20px
+      width: 80%
+      border-top: solid 1px var(--heading-color)
+
+    .title-wrap
+      @include flex(column, flex-start, flex-end, nowrap)
+      height: 95px
+      margin-bottom: 40px
+
+      h2
+        font-size: 32px
+        margin-bottom: 6px
+
+    .header-color
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 140px
+      z-index: -1
+
+    .row
+      @include flex(row, center, space-between, nowrap)
+      width: 100%
+      margin-bottom: 20px
+
+      & > *:not(:last-child)
+        margin-right: 20px
+
+    .left-side
+      margin-right: 20px
+
+      .img-wrap
+        margin-bottom: 20px
+
+      .items-wrap
+        ul
+          li
+            margin-bottom: 15px
+
+    .right-side
+      padding: 0px 20px
+
+      .responsibilities-wrap
+        margin-bottom: 40px
+
+        ul
+          padding-left: 20px
+
+          li
+            list-style: square
+            margin-bottom: 20px
+
+      .button
+        padding: 10px 15px
+
+@media only screen and (max-width: 786px)
+  .full-popup-wrap.work
+    .content-wrap
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+
+      .right-side
+        padding: 20px 0px

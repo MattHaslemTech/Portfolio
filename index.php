@@ -383,7 +383,7 @@
                   <div class="caption">Technology Apprentice <br class="desktop-hide"/><em>( July 2021 - Present )</em></div>
                 </div>
               </div>
-              <div class="desc"> MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. </div>
+              <div class="desc"> MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. <a href="https://maxxpotential.com/" target="_blank">Learn More</a></div>
               <div class="button-wrap"><a data-scroll-to="maxx-projects" class="button">Projects <img src="_pics/icons/double-arrow.svg"/></a></div>
             </div>
           </div>
@@ -511,9 +511,9 @@
               <div class="item category"> 
                 <h3>MAXX Potential Projects   <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
               </div>
-              <div class="item">  <img src="_pics/my-work/give.png"/></div>
-              <div class="item">   <img src="_pics/my-work/broadtime.png"/></div>
-              <div class="item">    <img src="_pics/my-work/nsrec.png"/></div>
+              <div data-open-popup="give" class="item">     <img src="_pics/my-work/give.png"/></div>
+              <div class="item">      <img src="_pics/my-work/broadtime.png"/></div>
+              <div class="item">     <img src="_pics/my-work/nsrec.png"/></div>
               <div class="item"> <img src="_pics/my-work/macys.png"/></div>
               <div class="item"> <img src="_pics/my-work/connectva.png"/></div>
               <div class="item"> <img src="_pics/my-work/chalk.png"/></div>
@@ -620,6 +620,54 @@
           </form>
         </div>
         <div class="overlay"></div>
+      </div>
+      <div data-popup-name="give" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: rgb(0,140,86);" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/give.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>Give.org | BBB Wise Giving Alliance</h2><a href="https://give.org" target="_blank">https://give.org</a>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>JavaScript / jQuery / AJAX</li>
+                  <li>C# </li>
+                  <li>ASP.NET MVC Architecture</li>
+                  <li>Sitefinity CMS</li>
+                  <li>Amazon Web Services (AWS)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">Give.org | BBB Wise Giving Alliance</h2><a href="https://give.org" target="_blank">https://give.org</a>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Provided requested front-end and back-end maintenance for the website utilizing ASP.NET MVC framework and Sitefinity content management system.</li>
+                <li>Developed front-end features and design changes with HTML, CSS, JavaScript, jQuery, and AJAX within the Sitefinity CMS.</li>
+                <li>Created various .cs and .cshtml files within the MVC architecture using C# and Razor syntax to develop new widgets and update existing ones, allowing client access to new CMS features</li>
+                <li>Implemented complete site redesign on over 200 pages of the website. The various designs were provided in the form of PSD files and I was in charge of building the front-end interface that would perfectly mirror the designs. I also provided back-end C# code that would handle complete functionality of the included components</li>
+                <li>Assisted with site migration to Amazon Web Services (AWS); deployed site and corresponding databases to run on AWS EC2 and RDS with open communication between them.</li>
+                <li>Redeveloped site pages to provide a better and more attractive user interface design.</li>
+                <li>Implemented Google Analytics events to provide client with more in-depth traffic statistics.</li>
+                <li>Implemented multiple API's to retrieve and display various information on the site</li>
+              </ul>
+            </div><a href="https://give.org/" target="_blank" style="background: rgb(0,140,86); color: #fff" class="button">Visit Site</a>
+          </div>
+        </div>
       </div>
       <div class="message-alert-wrap message-sent">
         <div class="content"><img src="_pics/icons/check.svg"/>

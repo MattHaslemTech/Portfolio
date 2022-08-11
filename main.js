@@ -155,6 +155,13 @@ $('[data-open-popup]').on('click', function(){
 $('.close-popup').on('click', function(){
   $('.full-popup-wrap.open').removeClass('open');
 });
+$('[data-scroll-to]').on('click', function(){
+  let scrollTarget = $(this).attr('data-scroll-to');
+
+  let scrollTargetElement = $('[data-scroll-name="' + scrollTarget + '"]');
+  console.log("Target : " + scrollTarget);
+  scrollToSection(scrollTargetElement);
+});
 /*
  *  Build list of skills
  */

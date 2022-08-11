@@ -18,7 +18,7 @@
 
   $content = wordwrap($content,70);
 
-  if(mail("matt.haslem@maxxpotential.com","MESSAGE FROM WEBSITE FROM {$name}",$content))
+  if(mail("matt@matthaslem.tech","MESSAGE FROM WEBSITE FROM {$name}",$content))
   {
     echo "Message sent. ";
   }

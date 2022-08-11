@@ -383,10 +383,8 @@
                   <div class="caption">Technology Apprentice <br class="desktop-hide"/><em>( July 2021 - Present )</em></div>
                 </div>
               </div>
-              <div class="desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore earum mollitia voluptates rem officia? Animi eligendi, nulla, aperiam iste eius molestias libero odio iure aliquid ipsum ab cupiditate cum quasi?</div>
-              <div class="button-wrap">
-                <div class="button">Projects <img src="_pics/icons/double-arrow.svg"/></div>
-              </div>
+              <div class="desc"> MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. </div>
+              <div class="button-wrap"><a data-scroll-to="maxx-projects" class="button">Projects <img src="_pics/icons/double-arrow.svg"/></a></div>
             </div>
           </div>
           <div class="section education">
@@ -508,7 +506,7 @@
         </div>
         <div class="content-wrap">
           <h1>My Work</h1>
-          <div id="maxx-projects" class="slideshow">
+          <div id="maxx-projects" data-scroll-name="maxx-projects" class="slideshow">
             <div data-opened="true" class="slide">
               <div class="item category"> 
                 <h3>MAXX Potential Projects   <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>

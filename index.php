@@ -367,7 +367,7 @@
           </div>
           <div class="text-wrap">
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quibusdam soluta incidunt error rerum a ad optio accusantium quidem, excepturi voluptas voluptatibus repellendus eos officia quaerat perferendis ea eius aliquid!</p>
+            <p>Hello! My name is Matt Haslem. I am a resident of Norfolk, VA with over 15 years of self-taught, educational, and professional experience in programming and web development. I spent my teenage years obsessed with anything pertaining to media development, including web development. I started creating websites when I was a young teen and it has proven to be my favorite hobby ever since. My first degree was in Communications because I wanted to learn as much as I can when it comes to all forms of media. At one point I decided technology was my true passion, so I went back to obtain my second Bachelor's degree in Computer Science.</p>
           </div>
         </div>
       </div>

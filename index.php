@@ -383,7 +383,7 @@
                   <div class="caption">Technology Apprentice <br class="desktop-hide"/><em>( July 2021 - Present )</em></div>
                 </div>
               </div>
-              <div class="desc"> MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. <a href="https://maxxpotential.com/" target="_blank">Learn More</a></div>
+              <div class="desc"> MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. <a href="https://maxxpotential.com/" target="_blank">Learn more at their site</a>.</div>
               <div class="button-wrap"><a data-scroll-to="maxx-projects" class="button">Projects <img src="_pics/icons/double-arrow.svg"/></a></div>
             </div>
           </div>
@@ -512,11 +512,11 @@
                 <h3>MAXX Potential Projects   <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
               </div>
               <div data-open-popup="give" class="item">     <img src="_pics/my-work/give.png"/></div>
-              <div class="item">      <img src="_pics/my-work/broadtime.png"/></div>
-              <div class="item">     <img src="_pics/my-work/nsrec.png"/></div>
-              <div class="item"> <img src="_pics/my-work/macys.png"/></div>
-              <div class="item"> <img src="_pics/my-work/connectva.png"/></div>
-              <div class="item"> <img src="_pics/my-work/chalk.png"/></div>
+              <div data-open-popup="broadtime" class="item">      <img src="_pics/my-work/broadtime.png"/></div>
+              <div data-open-popup="nsrec" class="item">      <img src="_pics/my-work/nsrec.png"/></div>
+              <div data-open-popup="macys" class="item">     <img src="_pics/my-work/macys.png"/></div>
+              <div data-open-popup="connectva" class="item">     <img src="_pics/my-work/connectva.png"/></div>
+              <div data-open-popup="chalk" class="item"> <img src="_pics/my-work/chalk.png"/></div>
             </div>
           </div>
         </div>
@@ -666,6 +666,141 @@
                 <li>Implemented multiple API's to retrieve and display various information on the site</li>
               </ul>
             </div><a href="https://give.org/" target="_blank" style="background: rgb(0,140,86); color: #fff" class="button">Visit Site</a>
+          </div>
+        </div>
+      </div>
+      <div data-popup-name="broadtime" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: rgb(80,80,80);" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/broadtime.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>Various Apps | Broadtime</h2>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>Swift</li>
+                  <li>C#</li>
+                  <li>CocoaPods </li>
+                  <li>Kotlin</li>
+                  <li>xCode</li>
+                  <li>Android Studio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">Broadtime</h2>
+            </div>
+            <div class="overview-wrap">
+              <h3>Overview</h3>
+              <p>BroadTime is a company that provides iOS and Android apps to locally known records stores.</p>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Manage various iOS and Android apps used by record stores. </li>
+                <li>Successfully implemented Swift code migration in order to allow the iOS apps to support newer devices. </li>
+                <li>Integrated tools to make the Apple Apps Store submission process simpler.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup-name="nsrec" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: rgb(50,69,135);" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/nsrec.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>NSREC | 233 Analytics</h2><a href="https://www.nsrecbuilder.com/" target="_blank">https://www.nsrecbuilder.com/</a>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>JavaScript / jQuery / AJAX</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>React</li>
+                  <li>Express</li>
+                  <li>Wordpress</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">NSREC | 233 Analytics</h2><a href="https://www.nsrec.com/" target="_blank">https://www.nsrec.com/</a>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Convert front-end features that were built with React/JS to a PHP built Wordpress feature that's easily customizable by the client</li>
+                <li>Implement a feature that allows the client to choose which content should be displayed on the website based on the year they select. This allows the client to create yearly content at their own pace and release it whenever they see fit. </li>
+              </ul>
+            </div>
+            <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">React Front-End Site</a><a href="https://www.nsrecbuilder.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">PHP/Wordpress Front-End Site</a></div>
+          </div>
+        </div>
+      </div>
+      <div data-popup-name="macys" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: rgb(50,69,135);" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/macys.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>NSREC | 233 Analytics</h2><a href="https://www.nsrec.com/" target="_blank">https://www.nsrec.com/</a>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>JavaScript / jQuery / AJAX</li>
+                  <li>C#</li>
+                  <li>ASP.NET MVC Architecture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">Macy's Testing Site | 233 Analytics</h2>
+            </div>
+            <div class="overview-wrap">
+              <h3>Overview</h3>
+              <p>233 Analytics maintained a web-based app for the Macy's stores. This app was used to help compile results from a variety of physical testing devices used by a many Macy's stores across the eastern shore. The users/managers of this app are able to select from a wide range of regions and districts to build a results table from.</p>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Reduced total page loading times from about 5 minutes down to less than 5 seconds by reducing database deadlocks, converting to more optimal datatypes, and implementing an AJAX based workflow to reduce the amount of unneccessary loaded data.</li>
+                <li>Set up a feature that allows the client export a readable csv spreadsheet that includes all test results from a given region.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -107,7 +107,8 @@ html(lang="en" dir="ltr")
                     em ( July 2021 - Present )
               .desc
                 |  MAXX Potential is a company that provides a diverse range of technology services to a wide variety of companies. Their main focus is to give their apprentices an opportunity to get the hands-on experience they need to kickstart their career. 
-                a(href="https://maxxpotential.com/" target="_blank") Learn More
+                a(href="https://maxxpotential.com/" target="_blank") Learn more at their site
+                | .
               .button-wrap
                 a.button(data-scroll-to="maxx-projects")
                   | Projects 
@@ -235,16 +236,16 @@ html(lang="en" dir="ltr")
                   img.icon.open-arrow.desktop-hide(src="_pics/arrow-down-dark.svg")
               .item(data-open-popup="give")      
                 img(src="_pics/my-work/give.png")    
-              .item       
-                img(src="_pics/my-work/broadtime.png")   
-              .item      
-                img(src="_pics/my-work/nsrec.png")
-              .item  
-                img(src="_pics/my-work/macys.png")
-              .item 
+              .item(data-open-popup="broadtime")       
+                img(src="_pics/my-work/broadtime.png")    
+              .item(data-open-popup="nsrec")       
+                img(src="_pics/my-work/nsrec.png") 
+              .item(data-open-popup="macys")      
+                img(src="_pics/my-work/macys.png")  
+              .item(data-open-popup="connectva")      
                 img(src="_pics/my-work/connectva.png")
-              .item 
-                img(src="_pics/my-work/chalk.png")
+              .item(data-open-popup="chalk")  
+                img(src="_pics/my-work/chalk.png")  
               
       .section.filler(style="--filler-height: 200px;")
       .section#talk.top-section(data-section-name="Talk")
@@ -272,10 +273,13 @@ html(lang="en" dir="ltr")
       include _includes/_items/section-navigator  
       include _includes/_items/mobile-nav  
       
-      include _includes/_popups/contact   
-      include _includes/_popups/work/give   
-      
-      include _includes/_alerts/message-sent   
+      include _includes/_popups/contact       
+      include _includes/_popups/work/give     
+      include _includes/_popups/work/broadtime   
+      include _includes/_popups/work/nsrec    
+      include _includes/_popups/work/macys   
+       
+      include _includes/_alerts/message-sent     
      
  
     

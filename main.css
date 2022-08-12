@@ -896,6 +896,9 @@ img.border[data-animate=true] {
 #about-me .content-wrap .text-wrap {
   width: min(90%, 560px);
 }
+#about-me .content-wrap .text-wrap p {
+  padding-left: 4px;
+}
 
 @media only screen and (max-width: 900px) {
   #about-me {
@@ -1598,7 +1601,13 @@ img.border[data-animate=true] {
 }
 .full-popup-wrap.work .content-wrap .title-wrap h2 {
   font-size: 32px;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
+}
+.full-popup-wrap.work .content-wrap .title-wrap a {
+  background: #545454;
+  padding: 5px 9px;
+  border-radius: 5px;
+  color: #fff;
 }
 .full-popup-wrap.work .content-wrap .header-color {
   position: absolute;
@@ -1616,6 +1625,9 @@ img.border[data-animate=true] {
   flex-wrap: nowrap;
   width: 100%;
   margin-bottom: 20px;
+}
+.full-popup-wrap.work .content-wrap .row.flex-start {
+  justify-content: flex-start;
 }
 .full-popup-wrap.work .content-wrap .row > *:not(:last-child) {
   margin-right: 20px;

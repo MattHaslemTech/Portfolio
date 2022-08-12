@@ -513,10 +513,10 @@
               </div>
               <div data-open-popup="give" class="item">     <img src="_pics/my-work/give.png"/></div>
               <div data-open-popup="broadtime" class="item">      <img src="_pics/my-work/broadtime.png"/></div>
-              <div data-open-popup="nsrec" class="item">      <img src="_pics/my-work/nsrec.png"/></div>
+              <div data-open-popup="nsrec" class="item">       <img src="_pics/my-work/nsrec.png"/></div>
               <div data-open-popup="macys" class="item">     <img src="_pics/my-work/macys.png"/></div>
               <div data-open-popup="connectva" class="item">     <img src="_pics/my-work/connectva.png"/></div>
-              <div data-open-popup="chalk" class="item">  <img src="_pics/my-work/chalk.png"/></div>
+              <div data-open-popup="chalk" class="item">    <img src="_pics/my-work/chalk.png"/></div>
             </div>
           </div>
         </div>
@@ -755,6 +755,8 @@
               <ul>
                 <li>Convert front-end features that were built with React/JS to a PHP built Wordpress feature that's easily customizable by the client</li>
                 <li>Implement a feature that allows the client to choose which content should be displayed on the website based on the year they select. This allows the client to create yearly content at their own pace and release it whenever they see fit. </li>
+                <li>Develop various shortcode functions to be displayed on the site. </li>
+                <li>Modify existing HTML and CSS to have the Wordpress front-end design match/update that of the React built version.</li>
               </ul>
             </div>
             <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">React Front-End Site</a><a href="https://www.nsrecbuilder.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">PHP/Wordpress Front-End Site</a></div>
@@ -803,6 +805,53 @@
                 <li>Set up a feature that allows the client export a readable csv spreadsheet that includes all test results from a given region.</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <div data-popup-name="connectva" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: #002E5D;" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/connectva.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>ConnectVa | The Community Foundation</h2><a href="https://www.connectva.org/" target="_blank">https://www.connectva.org/</a>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>PHP</li>
+                  <li>Wordpress</li>
+                  <li>Docker</li>
+                  <li>Django</li>
+                  <li>AWS</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">ConnectVa | The Community Foundation</h2><a href="https://www.connectva.org/" target="_blank">https://www.connectva.org/</a>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Provided front-end and back-end maintenance for the Wordpress built website using PHP </li>
+                <li>Created and updated custom and premade WordPress functions using PHP.</li>
+                <li>Developed front-end features and design changes with HTML, CSS, JavaScript, jQuery, and AJAX within the Sitefinity CMS.</li>
+                <li>Developed various forms using PHP to save custom metadata to account for new user roles within the database.</li>
+                <li>Maintained a custom API built with Django that was used for a major feature of the site.</li>
+              </ul>
+            </div>
+            <div class="row flex-start"><a href="https://www.connectva.org/" target="_blank" style="background: #002E5D; color: #fff" class="button">Visit Site</a></div>
           </div>
         </div>
       </div>

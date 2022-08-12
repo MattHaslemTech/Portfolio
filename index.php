@@ -766,11 +766,11 @@
           <div class="text">Close</div>
         </div>
         <div class="content-wrap">
-          <div style="background: rgb(50,69,135);" class="header-color"></div>
+          <div style="background: rgb(231,0,0);" class="header-color"></div>
           <div class="left-side">
             <div class="img-wrap"><img src="_pics/my-work/macys.png"/></div>
             <div class="title-wrap desktop-hide"> 
-              <h2>NSREC | 233 Analytics</h2><a href="https://www.nsrec.com/" target="_blank">https://www.nsrec.com/</a>
+              <h2>Macy's Testing Site | 233 Analytics</h2>
             </div>
             <div class="technology-used">
               <h3>Technology Used</h3>

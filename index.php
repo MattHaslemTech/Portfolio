@@ -516,7 +516,7 @@
               <div data-open-popup="nsrec" class="item">      <img src="_pics/my-work/nsrec.png"/></div>
               <div data-open-popup="macys" class="item">     <img src="_pics/my-work/macys.png"/></div>
               <div data-open-popup="connectva" class="item">     <img src="_pics/my-work/connectva.png"/></div>
-              <div data-open-popup="chalk" class="item"> <img src="_pics/my-work/chalk.png"/></div>
+              <div data-open-popup="chalk" class="item">  <img src="_pics/my-work/chalk.png"/></div>
             </div>
           </div>
         </div>
@@ -702,6 +702,7 @@
             </div>
             <div class="overview-wrap">
               <h3>Overview</h3>
+              <div class="line"></div>
               <p>BroadTime is a company that provides iOS and Android apps to locally known records stores.</p>
             </div>
             <div class="responsibilities-wrap">
@@ -791,6 +792,7 @@
             </div>
             <div class="overview-wrap">
               <h3>Overview</h3>
+              <div class="line"></div>
               <p>233 Analytics maintained a web-based app for the Macy's stores. This app was used to help compile results from a variety of physical testing devices used by a many Macy's stores across the eastern shore. The users/managers of this app are able to select from a wide range of regions and districts to build a results table from.</p>
             </div>
             <div class="responsibilities-wrap">

@@ -727,7 +727,7 @@
           <div class="left-side">
             <div class="img-wrap"><img src="_pics/my-work/nsrec.png"/></div>
             <div class="title-wrap desktop-hide"> 
-              <h2>NSREC | 233 Analytics</h2><a href="https://www.nsrecbuilder.com/" target="_blank">https://www.nsrecbuilder.com/</a>
+              <h2>NSREC | 233 Analytics</h2><a href="https://www.nsrec.com/" target="_blank">https://www.nsrec.com/</a>
             </div>
             <div class="technology-used">
               <h3>Technology Used</h3>
@@ -756,10 +756,11 @@
                 <li>Convert front-end features that were built with React/JS to a PHP built Wordpress feature that's easily customizable by the client</li>
                 <li>Implement a feature that allows the client to choose which content should be displayed on the website based on the year they select. This allows the client to create yearly content at their own pace and release it whenever they see fit. </li>
                 <li>Develop various shortcode functions to be displayed on the site. </li>
-                <li>Modify existing HTML and CSS to have the Wordpress front-end design match/update that of the React built version.</li>
+                <li>Build Wordpress theme to replicate original front-end built with React.</li>
+                <li>Migrate site to allow front-end and back-end to be hosted on same server.</li>
               </ul>
             </div>
-            <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">React Front-End Site</a><a href="https://www.nsrecbuilder.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">PHP/Wordpress Front-End Site</a></div>
+            <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">React Front-End Site</a></div>
           </div>
         </div>
       </div>

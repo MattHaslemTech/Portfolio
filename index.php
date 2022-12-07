@@ -482,11 +482,12 @@
               <div data-priority="2" data-professional="personal" data-type="programming" class="item">C++</div>
               <div data-priority="2" data-professional="professional personal" data-type="back-end programming" class="item">C#</div>
               <div data-priority="3" data-professional="personal" data-type="programming" class="item">Python</div>
-              <div data-priority="2" data-professional="professional personal" data-type="front-end back-end" class="item">React</div>
+              <div data-priority="1" data-professional="professional personal" data-type="front-end back-end" class="item">React</div>
               <div data-priority="2" data-professional="personal" data-type="programming" class="item">Java</div>
               <div data-priority="3" data-professional="professional" data-type="front-end back-end" class="item">MVC</div>
               <div data-priority="2" data-professional="professional" data-type="front-end back-end" class="item">Sitefinity</div>
               <div data-priority="2" data-professional="professional personal" data-type="front-end back-end" class="item">Wordpress</div>
+              <div data-priority="2" data-professional="professional" data-type="back-end" class="item">Firebase</div>
             </div>
             <div filter="false" class="word-cloud-wrap"></div>
           </div>
@@ -760,7 +761,7 @@
                 <li>Migrate site to allow front-end and back-end to be hosted on same server.</li>
               </ul>
             </div>
-            <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">React Front-End Site</a></div>
+            <div class="row flex-start"><a href="https://www.nsrec.com/" target="_blank" style="background: rgb(50,69,135); color: #fff" class="button">Visit Site</a></div>
           </div>
         </div>
       </div>
@@ -853,6 +854,53 @@
               </ul>
             </div>
             <div class="row flex-start"><a href="https://www.connectva.org/" target="_blank" style="background: #002E5D; color: #fff" class="button">Visit Site</a></div>
+          </div>
+        </div>
+      </div>
+      <div data-popup-name="chalk" class="full-popup-wrap work">
+        <div class="overlay"></div>
+        <div class="close-popup"><img src="_pics/icons/x_white.svg"/>
+          <div class="text">Close</div>
+        </div>
+        <div class="content-wrap">
+          <div style="background: #459aeb;" class="header-color"></div>
+          <div class="left-side">
+            <div class="img-wrap"><img src="_pics/my-work/chalk.png"/></div>
+            <div class="title-wrap desktop-hide"> 
+              <h2>NSREC | 233 Analytics</h2><a href="https://chalkcoaching.com/" target="_blank">https://chalkcoaching.com/</a>
+            </div>
+            <div class="technology-used">
+              <h3>Technology Used</h3>
+              <div class="line"></div>
+              <div class="items-wrap">
+                <ul>
+                  <li>HTML / CSS</li>
+                  <li>JavaScript / jQuery / AJAX</li>
+                  <li>Firebase</li>
+                  <li>BigQuery</li>
+                  <li>Google Cloud Functions</li>
+                  <li>React</li>
+                  <li>Typescript</li>
+                  <li>Redux</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="title-wrap mobile-hide"> 
+              <h2 style="color: #fff;">CHALK Coaching App</h2><a href="https://chalkcoaching.com/" target="_blank">https://chalkcoaching.com/</a>
+            </div>
+            <div class="responsibilities-wrap">
+              <h3>Responsibilities / Accomplishments</h3>
+              <div class="line"></div>
+              <ul>
+                <li>Developed features to give users with elevated permissions the ability to view data and statistics in a simple and graphical way.</li>
+                <li>Built database tables and developed complex queries used to store data in a specific way that proved to be more useful for the administrators. </li>
+                <li>Co Developed features to give the owners the ability to create and manage users with several new administrative roles that had their own respective permissions throughout the site. </li>
+                <li>Lead prototype demos to demonstrate value and solicit feedback from key stakeholders, promoting continuous improvement and iterative development as per SAFE Agile principles</li>
+              </ul>
+            </div>
+            <div class="row flex-start"><a href="https://chalkcoaching.com/" target="_blank" style="background: #459aeb; color: #fff" class="button">React Front-End Site</a></div>
           </div>
         </div>
       </div>

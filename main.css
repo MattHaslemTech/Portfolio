@@ -374,6 +374,7 @@ img.border[data-animate=true] {
   top: 20px;
   border-radius: 4px;
   z-index: 99;
+  background: rgba(0, 0, 0, 0.1);
 }
 .full-popup-wrap > .close-popup:hover {
   cursor: pointer;
@@ -600,7 +601,6 @@ img.border[data-animate=true] {
   width: min(90%, 950px);
 }
 
-@use "sass:math";
 .section#hero {
   overflow: hidden;
   height: 456px;
@@ -1596,7 +1596,7 @@ img.border[data-animate=true] {
   align-items: flex-start;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  height: 95px;
+  min-height: 95px;
   margin-bottom: 40px;
 }
 .full-popup-wrap.work .content-wrap .title-wrap h2 {

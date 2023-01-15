@@ -3,3 +3,4 @@ $('[data-scroll-to]').on('click', function(){
   let scrollTargetElement = $('[data-scroll-name="' + scrollTarget + '"]');
   scrollToSection(scrollTargetElement);
 });
+ 

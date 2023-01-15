@@ -157,11 +157,10 @@ $('.close-popup').on('click', function(){
 });
 $('[data-scroll-to]').on('click', function(){
   let scrollTarget = $(this).attr('data-scroll-to');
-
   let scrollTargetElement = $('[data-scroll-name="' + scrollTarget + '"]');
-  console.log("Target : " + scrollTarget);
   scrollToSection(scrollTargetElement);
 });
+ 
 /*
  *  Build list of skills
  */
@@ -492,7 +491,7 @@ $('#contact-form').on('submit', function(e){
   let loader = $(this).find('.loader');
   loader.show(200);
 
-  console.log('Data: ' + $(this).serialize());
+  console.log('Data 2: ', $(this).serialize());
 
   // Submit form
   $.ajax({
@@ -500,7 +499,7 @@ $('#contact-form').on('submit', function(e){
     url: "_php/submit-contact.php",
     data: $(this).serialize(),
     success: function(res){
-      console.log('res: ' + res);
+      console.log('res 2: ', res);
 
       contactWrap.addClass('close');
       alertWrap.addClass('show');
@@ -521,4 +520,4 @@ $('#contact-form').on('submit', function(e){
   })
 
 });
-});                                     
+});                                          

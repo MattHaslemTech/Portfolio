@@ -350,6 +350,11 @@ img.border[data-animate=true] {
   transform: rotateZ(-180deg);
 }
 
+body.noscroll {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .full-popup-wrap {
   display: flex;
   flex-direction: column;
@@ -909,6 +914,11 @@ img.border[data-animate=true] {
   }
   #about-me .content-wrap .img-wrap {
     margin: 60px 0px;
+    width: 175px;
+    height: 175px;
+  }
+  #about-me .content-wrap .img-wrap .circles-wrap {
+    top: -16px;
   }
   #about-me .content-wrap .text-wrap {
     padding-top: 40px;

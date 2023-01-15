@@ -8,6 +8,7 @@
 <script type="text/javascript" src="main.js"></script>
 
     <title>Matt Haslem - Web Developer</title>
+    <link rel="icon" href="https://matthaslem.tech/favicon.ico"/>
   </head>
   <body data-theme="light"> 
     <div id="hero" data-section-name="Home" class="section top-section larger-than-tablet-hide">
@@ -259,7 +260,7 @@
       </div>
       <div id="about-me" data-section="about" data-section-name="About Me" class="section top-section">
         <div class="content-wrap">
-          <div class="img-wrap"><img src="_pics/Matt_Haslem_Web_Developer.jpg" alt="Matt Haslem - Web Developer"/>
+          <div class="img-wrap"><img src="_pics/Matt_Haslem_Web_Developer.png" alt="Matt Haslem - Web Developer"/>
             <div class="circles-wrap">
               <div class="inner"><svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.74 225.55">
   <defs>
@@ -367,7 +368,7 @@
           </div>
           <div class="text-wrap">
             <h1>About Me</h1>
-            <p>Hello! My name is Matt Haslem. I am a resident of Norfolk, VA with over 15 years of self-taught, educational, and professional experience in programming and web development. I spent my teenage years obsessed with anything pertaining to media development, including web development. I started creating websites when I was a young teen and it has proven to be my favorite hobby ever since. My first degree was in Communications because I wanted to learn as much as I can when it comes to all forms of media. At one point I decided technology was my true passion, so I went back to obtain my second Bachelor's degree in Computer Science.</p>
+            <p>Hello, My name is Matt Haslem! I am a resident of Norfolk, VA with extensive experience in programming and web development. I’m currently a Technology Apprentice and two time graduate from Old Dominion university, with degrees in Computer Science and Media Communications -- utilizing my education from both to design, develop, and maintain quality applications for clients.</p>
           </div>
         </div>
       </div>
@@ -513,11 +514,11 @@
                 <h3>MAXX Potential Projects   <img src="_pics/arrow-down-dark.svg" class="icon open-arrow desktop-hide"/></h3>
               </div>
               <div data-open-popup="give" class="item">     <img src="_pics/my-work/give.png"/></div>
+              <div data-open-popup="chalk" class="item">    <img src="_pics/my-work/chalk.png"/></div>
               <div data-open-popup="broadtime" class="item">      <img src="_pics/my-work/broadtime.png"/></div>
               <div data-open-popup="nsrec" class="item">       <img src="_pics/my-work/nsrec.png"/></div>
               <div data-open-popup="macys" class="item">     <img src="_pics/my-work/macys.png"/></div>
               <div data-open-popup="connectva" class="item">     <img src="_pics/my-work/connectva.png"/></div>
-              <div data-open-popup="chalk" class="item">    <img src="_pics/my-work/chalk.png"/></div>
             </div>
           </div>
         </div>
@@ -900,7 +901,7 @@
                 <li>Lead prototype demos to demonstrate value and solicit feedback from key stakeholders, promoting continuous improvement and iterative development as per SAFE Agile principles</li>
               </ul>
             </div>
-            <div class="row flex-start"><a href="https://chalkcoaching.com/" target="_blank" style="background: #459aeb; color: #fff" class="button">React Front-End Site</a></div>
+            <div class="row flex-start"><a href="https://chalkcoaching.com/" target="_blank" style="background: #459aeb; color: #fff" class="button">Visit Site</a></div>
           </div>
         </div>
       </div>

@@ -59,7 +59,6 @@ var sectionNavigator = $('#section-navigator');
 function getCurrentSection()
 {
     var docScroll = $(document).scrollTop();
-    //console.log("body: " + docScroll);
     var currentSection = $('.section:first');
 
     var nextSection;
@@ -136,8 +135,6 @@ sectionNavigator.find('.button').on('click', function(){
     }
   }
 
-  console.log('Current : ' + currentSection.data('section-name'));
-  console.log('Target : ' + targetSection.data('section-name'));
 
   scrollToSection(targetSection);
 
@@ -160,7 +157,7 @@ $('[data-scroll-to]').on('click', function(){
   let scrollTargetElement = $('[data-scroll-name="' + scrollTarget + '"]');
   scrollToSection(scrollTargetElement);
 });
- 
+
 /*
  *  Build list of skills
  */
@@ -491,15 +488,12 @@ $('#contact-form').on('submit', function(e){
   let loader = $(this).find('.loader');
   loader.show(200);
 
-  console.log('Data 2: ', $(this).serialize());
-
   // Submit form
   $.ajax({
     type: "POST",
     url: "_php/submit-contact.php",
     data: $(this).serialize(),
     success: function(res){
-      console.log('res 2: ', res);
 
       contactWrap.addClass('close');
       alertWrap.addClass('show');
@@ -520,4 +514,4 @@ $('#contact-form').on('submit', function(e){
   })
 
 });
-});                                          
+});

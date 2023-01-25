@@ -78,15 +78,12 @@ $('#contact-form').on('submit', function(e){
   let loader = $(this).find('.loader');
   loader.show(200);
 
-  console.log('Data 2: ', $(this).serialize());
-
   // Submit form
   $.ajax({
     type: "POST",
     url: "_php/submit-contact.php",
     data: $(this).serialize(),
     success: function(res){
-      console.log('res 2: ', res);
 
       contactWrap.addClass('close');
       alertWrap.addClass('show');
